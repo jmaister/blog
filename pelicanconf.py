@@ -40,8 +40,7 @@ SITESUBTITLE = 'Computing Life'
 #DISQUS_SITENAME = ''
 GITHUB_URL = 'https://github.com/jmaister'
 #GOOGLE_ANALYTICS 	‘UA-XXXX-YYYY’ to activate Google Analytics.
-MENUITEMS = ('Blog', 'CV', 'About')
-MENUITEMS = ''
+#MENUITEMS = ('Blog', 'CV', 'About')
 TWITTER_USERNAME = 'jordimaister'
 
 
@@ -55,4 +54,4 @@ STATIC_PATHS = ['img', 'css', 'js']
 # very useful for debugging purposes
 DELETE_OUTPUT_DIRECTORY = True
 
-THEME = 'notmyidea'
+THEME = 'pelican-chunk'
