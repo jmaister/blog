@@ -1,1 +1,1 @@
-pelican -s pelicanconf.py -v -d -o output content
+pelican -s pelicanconf.py -v -r -d -o output content

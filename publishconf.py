@@ -22,18 +22,3 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
-
-
-####
-## MY CONFIG
-####
-
-# static files to copy into root, very useful for robots.txt
-FILES_TO_COPY = (
-   ('extra/robots.txt', 'robots.txt'),
-   ('extra/humans.txt', 'humans.txt'),
-)
-# directories to be copied into output/static/
-STATIC_PATHS = ['img', 'css', 'js']
-# very useful for debugging purposes
-DELETE_OUTPUT_DIRECTORY = True
