@@ -62,6 +62,7 @@ THEME = 'pelican-chunk'
 #THEME = './pelican-themes/iris'
 #THEME = './pelican-themes/built-texts' # http://theanalyst.github.io/static-site-generators-everything-else.html
 THEME = './mytheme'
+THEME = './jmtheme'
 
 
 
