@@ -36,15 +36,21 @@
 		<link href='http://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
+
 		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
-		
+
         {% endblock head %}
 </head>
 
-<body id="index" class="home container">
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
+<body id="index">
+    <div class="container">
+        <header id="banner">
+            <a href="{{ SITEURL }}">
+                <h1>{{ SITENAME }}</h1>
+                <h2>{{ SITESUBTITLE }}</h2>
+            </a>
+        </header>
+
 		<div class="navbar">
 		<div class="navbar-inner">
         <ul class="nav">
@@ -67,14 +73,15 @@
         {% block content %}
         {% endblock %}
 
-        <footer id="footer" class="body">
+        <footer id="footer">
+                <hr/>
                 <address id="about" class="vcard body">
                 &copy; Jordi Burgos. 2013.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+                </address>
+        </footer>
 		
         <!--Add statistycs-->
         {% include 'analytics.html' %}
-
+    </div>
 </body>
 </html>

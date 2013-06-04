@@ -1,46 +1,99 @@
-body         { font-family: 'Droid Sans', sans-serif; font-size: 18px; color: #444; }
+/*color: #FF2259;*/
 
-h1, h2, h3, h4 {
-	font-family: 'Podkova', serif; font-weight: normal; color: #222;
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 18px;
+    color: #444;
+    background-color: #EFEFEF;
 }
 
-h1           { font-size: 50px; margin: 15px 0 5px 0; }
-h2           { font-size: 35px; margin: 15px 0 5px 0; }
-h3           { font-size: 24px; margin: 15px 0 5px 0; }
-h4           { font-size: 19px; margin: 15px 0 5px 0; }
+h1, h2, h3, h4 {
+    font-family: 'Podkova', serif;
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 1.1em;
+    word-spacing: 0.25em;
+    margin: 15px 0 5px 0;
+    color: #0088CC;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+}
+
+h1, h2, h3, h4, a {
+    text-shadow: 0 0 1px #D6D6D6 !important;
+}
+
+
+a:hover, a.focus {
+    text-decoration: none;
+}
+
+#banner {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: #EFEFEF;
+}
+
+#banner a {
+    text-decoration: none;
+}
 
 #banner h1 {
-	font-size: 75px;
-	margin: 40px;
-	text-align: center;
+    font-size: 6em;
+    margin: 40px;
+    margin-bottom: 20px;
 }
 
 #footer {
     margin-top: 20px;
 }
 
-footer {
-    margin-bottom: 20px;
+footer#footer {
+    text-align: center;
 }
 
 .info-article {
-	margin-top: 3px;
-	margin-bottom: 11px;
-	font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
 abbr, address {
-	display: inline;
-}
-.tag-list {
-	margin-left: 30px;
+    display: inline;
 }
 
-/* Inset, by Dan Eden */ 
-hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); 
-              border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+span.tag-list {
+    margin-left: 30px;
+    display: inline-block;
+}
+span.tag {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Inset, by Dan Eden */
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 /* For align center */
-.align-center { display: block;
-                margin-left: auto;
-                margin-right: auto}
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

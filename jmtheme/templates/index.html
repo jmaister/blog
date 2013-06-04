@@ -2,25 +2,16 @@
 {% block content %}
 <section id="content">
 {% block content_title %}
-<h2>All articles</h2>
 {% endblock %}
 
 <div class="container">
-{% for article in articles_page.object_list %}
+{% for article in articles_page.object_list|sort %}
     <div class="row-fluid">
-		<h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>	</div>
-    <div class="row-fluid info-article">
-		{% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
-		On <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-		<!--
-		{% if article.category %}| <a class="url" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% endif %}
-		-->
-		<span class="tag-list">
-		{% for tag in article.tags %}
-			<span class="tag"><a href="{{ SITEURL }}/{{tag.url}}"><i class="icon-tag"></i> {{tag}}</a></span>
-		{% endfor %}
-		</span>
-	</div>
+		<h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+    </div>
+
+    {% include 'article_info.html' %}
+
     <div class="row-fluid">
 		{{ article.summary }}
 	</div>
