@@ -1,14 +1,14 @@
-/*color: #FF2259;*/
 
 body {
-    font-family: 'Droid Sans', sans-serif;
+    border-top: 3px solid #E9573F;
+    font-family: 'Habibi', serif;
     font-size: 18px;
     color: #444;
-    background-color: #EFEFEF;
+    background-color: #FFFFFF;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Podkova', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     letter-spacing: -0.06em;
     line-height: 1.1em;
@@ -30,9 +30,8 @@ h4 {
 }
 
 h1, h2, h3, h4, a {
-    text-shadow: 0 0 1px #D6D6D6 !important;
+    text-shadow: 0 0 15px #999999;
 }
-
 
 a:hover, a.focus {
     text-decoration: none;
@@ -51,7 +50,7 @@ a:hover, a.focus {
 }
 
 #banner h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin: 40px;
     margin-bottom: 20px;
 }
@@ -83,6 +82,15 @@ span.tag {
     display: inline-block;
 }
 
+/* Make a not responsive pre, shows scrollbar when small */
+div.highlight pre {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+    word-wrap: normal;
+    word-break: normal;
+}
+
 /* Inset, by Dan Eden */
 hr {
     border: 0;
@@ -95,5 +103,5 @@ hr {
 .align-center {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }

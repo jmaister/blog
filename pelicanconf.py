@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jordi Burgos'
 SITENAME = u'Jordi Burgos'
-SITESUBTITLE = ''
-SITEURL = ''
+SITESUBTITLE = 'Computing Life'
+SITEURL = 'http://localhost:8000'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -46,6 +46,7 @@ DISQUS_SITENAME = 'jordiburgos'
 GITHUB_URL = 'http://github.com/jmaister'
 GOOGLE_ANALYTICS = 'UA-41305783-1'
 TWITTER_USERNAME = 'jordimaister'
+FACEBOOK_APPID = '378472698924914'
 
 # static files to copy into root, very useful for robots.txt
 FILES_TO_COPY = (
