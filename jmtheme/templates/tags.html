@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Tags for {{ SITENAME }}</h1>
+
+<dl>
+{% for tag, articles in tags %}
+    <dt>{{ tag }}</dt>
+    {% for article in articles %}
+        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+    {% endfor %}
+{% endfor %}
+</dl>
+{% endblock %}

@@ -1,0 +1,9 @@
+Welcome!
+
+This page is made with Pelican.
+The theme is based on the "simple" one
+but modified with Bootstrap and Font-Awesome.
+
+Check it on my github page.
+
+By me, Jordi Burgos.

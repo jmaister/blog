@@ -24,7 +24,8 @@ FEED_RSS = 'feeds/all.rss.xml'
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
           ('github', 'http://github.com/jmaister'),
-          ('facebook', 'http://www.facebook.com/jordiburgos'),)
+          #('facebook', 'http://www.facebook.com/jordiburgos'),
+          )
 
 EMAIL = 'jordiburgos@gmail.com'
 DISPLAY_PAGES_ON_MENU = True

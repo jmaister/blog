@@ -29,8 +29,11 @@
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
 
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" />
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" />
+        
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <!--
@@ -50,6 +53,16 @@
 </head>
 
 <body id="index">
+
+     <div class="navigation">
+        <ol class="nav">
+          <li class="current"><a href="{{ SITEURL }}">Blog</a> </li>
+          <li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+          <li><a href="{{ SITEURL }}/tags.html">Tags</a> </li>
+          <li><a href="{{ SITEURL }}/{{ FEED_RSS }}">RSS</a> </li>
+        </ol>
+      </div>
+
     <div class="container">
         <header id="banner">
             <a href="{{ SITEURL }}">
@@ -74,6 +87,14 @@
 			  <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 			{% endfor %}
 		{% endif %}
+        </ul>
+        <ul class="nav pull-right">        
+            {% for name, link in SOCIAL %}
+                <li><a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a></li>
+            {% endfor %}
+            {% if EMAIL%}
+                <li><a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a></li>
+            {% endif %}
         </ul>
 		</div>
 		</div>

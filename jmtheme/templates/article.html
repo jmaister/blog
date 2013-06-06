@@ -15,8 +15,10 @@
     {{ article.content }}
   </div>
   <hr/>
-  {% include 'twitter.html' %}
-  {% include 'facebook.html' %}
+  <div class="row-fluid">
+        <div class="span2">{% include 'twitter.html' %}</div>
+        <div class="span2">{% include 'facebook.html' %}</div>
+  </div>
   <hr/>
 {% include 'disqus.html' %}
 </section>
