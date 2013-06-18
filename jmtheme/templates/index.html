@@ -6,15 +6,17 @@
 
 <div class="container">
 {% for article in articles_page.object_list|sort %}
-    <div class="row-fluid">
-		<h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+    <div class="article">
+        <div class="row-fluid">
+            <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        </div>
+
+        {% include 'article_info.html' %}
+
+        <div class="row-fluid">
+            {{ article.summary }}
+        </div>
     </div>
-
-    {% include 'article_info.html' %}
-
-    <div class="row-fluid">
-		{{ article.summary }}
-	</div>
 {% endfor %}
 </div>
 {% include 'pagination.html' %}

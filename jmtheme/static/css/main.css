@@ -4,6 +4,7 @@ body {
     font-size: 18px;
     color: #444;
     background-color: #FFFFFF;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
@@ -63,10 +64,23 @@ footer#footer {
     margin-bottom: 10px;
 }
 
+.article {
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
 .info-article {
     margin-top: 3px;
     margin-bottom: 20px;
     font-size: 14px;
+}
+
+.entry-content {
+    text-align: justify;
+}
+
+.entry-content p {
+    margin-bottom: 10px;
 }
 
 abbr, address {
