@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+MARKUP = ('md', 'html')
+
 AUTHOR = u'Jordi Burgos'
 SITENAME = u'Jordi Burgos'
 SITESUBTITLE = 'Computing Life'
@@ -45,27 +47,23 @@ DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = 'jordiburgos'
 GITHUB_URL = 'http://github.com/jmaister'
-GOOGLE_ANALYTICS = 'UA-41305783-1'
+GOOGLE_ANALYTICS_CODE = 'UA-41305783-1'
 TWITTER_USERNAME = 'jordimaister'
 FACEBOOK_APPID = '378472698924914'
 
-# static files to copy into root, very useful for robots.txt
-FILES_TO_COPY = (
-   ('extra/robots.txt', 'robots.txt'),
-   ('extra/humans.txt', 'humans.txt'),
-)
 # directories to be copied into output/static/
-STATIC_PATHS = ['img', 'css', 'js']
+STATIC_PATHS = [
+    'img',
+    'css',
+    'js',
+    'extra/robots.txt',
+    'extra/humans.txt',
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/humans.txt': {'path': 'humans.txt'},
+}
 
-THEME = 'pelican-chunk'
-#THEME = './maistertheme'
-#THEME = './pelican-themes/tuxlite_tbs'
-#THEME = './pelican-themes/pelican-fresh'
-#THEME = './pelican-themes/iris'
-#THEME = './pelican-themes/built-texts' # http://theanalyst.github.io/static-site-generators-everything-else.html
-THEME = './mytheme'
 THEME = './jmtheme'
-
-
 
 DEFAULT_DATE_FORMAT = ('%d %b %Y')
