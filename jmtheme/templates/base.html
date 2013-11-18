@@ -53,7 +53,7 @@
         .large{ font-size: 50px; line-height: 50px; }
         .medium { font-size: 30px; padding: 0 5px; }
         .small { font-size: 15px; padding: 0 5px; }
-        
+
         address {
             display: inline;
         }
@@ -68,23 +68,19 @@
         .jumbotron {
             margin-top: 80px;
         }
+        .title * {
+            font-size: 45px;
+            color: #FFFFFF;
+        }
+        h1, h2, h3, h4, h5, .title {
+            font-family: "Crete Round","Georgia",serif;
+        }
+        
         </style>
         
         
         <!-- Fonts -->
-        <!--
-        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Alef:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
-
-        <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Habibi|Raleway:100,300,700' rel='stylesheet' type='text/css'>
-        -->
-        <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 <!--
 		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
 -->		
@@ -135,7 +131,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <!-- social -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">Social</div>
                         <ul class="list-group">
                             {% for name, link in SOCIAL %}
@@ -153,7 +149,7 @@
                     <!-- social -->
                     
                     <!-- categories -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">Categories</div>
                         <ul class="list-group">
                             {% for cat, null in categories %}

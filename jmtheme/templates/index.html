@@ -2,12 +2,10 @@
 
 {% block content %}
 <section id="content">
-{% block content_title %}
-{% endblock %}
 
 {% for article in articles_page.object_list|sort %}
     <div class="panel panel-primary">
-        <div class="panel-heading">
+        <div class="panel-heading title">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
         </div>
         <div class="panel-body">
@@ -15,9 +13,9 @@
         </div>
         <div class="panel-body">
         
-        {{ article.summary }}
+            {{ article.summary }}
         
-            <a class="btn btn-success" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Continue reading...</a>
+            <a class="btn btn-success" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Continue reading &rarr;</a>
         </div>
     </div>
 {% endfor %}

@@ -6,10 +6,10 @@ MARKUP = ('md', 'html')
 
 AUTHOR = u'Jordi Burgos'
 SITENAME = u'Jordi Burgos'
-SITESUBTITLE = 'Computing Life'
+SITESUBTITLE = 'Programming, technology and random'
 SITEURL = 'http://localhost:8000'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = u'en'
 
@@ -47,6 +47,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = 'jordiburgos'
 GITHUB_URL = 'http://github.com/jmaister'
+GITHUB_USERNAME = 'jmaister'
 GOOGLE_ANALYTICS_CODE = 'UA-41305783-1'
 TWITTER_USERNAME = 'jordimaister'
 FACEBOOK_APPID = '378472698924914'
