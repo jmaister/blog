@@ -6,8 +6,23 @@ MARKUP = ('md', 'html')
 
 AUTHOR = u'Jordi Burgos'
 SITENAME = u'Jordi Burgos'
-SITESUBTITLE = 'Programming, technology and random'
-SITEURL = 'http://localhost:8000'
+SITESUBTITLE = 'Programming, technology and random things.'
+SITEURL = 'http://jordiburgos.com'
+#SITEURL = 'http://localhost:8000'
+
+# Formatting for urls
+
+ARTICLE_URL = "post/{date:%Y}/{slug}.html"
+ARTICLE_SAVE_AS = "post/{date:%Y}/{slug}.html"
+
+ARTICLE_LANG_URL = "post/{date:%Y}/{slug}-{lang}.html"
+ARTICLE_LANG_SAVE_AS  = "post/{date:%Y}/{slug}-{lang}.html"
+
+CATEGORY_URL = "category/{slug}"
+CATEGORY_SAVE_AS = "category/{slug}/index.html"
+
+TAG_URL = "tag/{slug}/"
+TAG_SAVE_AS = "tag/{slug}/index.html"
 
 TIMEZONE = 'Europe/Madrid'
 
@@ -46,9 +61,9 @@ PATH  = 'content'
 DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = 'jordiburgos'
-GITHUB_URL = 'http://github.com/jmaister'
 GITHUB_USERNAME = 'jmaister'
-GOOGLE_ANALYTICS_CODE = 'UA-41305783-1'
+GOOGLE_ANALYTICS_CODE = 'UA-45872762-1'
+GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 TWITTER_USERNAME = 'jordimaister'
 FACEBOOK_APPID = '378472698924914'
 
