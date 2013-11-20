@@ -7,8 +7,7 @@ MARKUP = ('md', 'html')
 AUTHOR = u'Jordi Burgos'
 SITENAME = u'Jordi Burgos'
 SITESUBTITLE = 'Programming, technology and random things.'
-SITEURL = 'http://jordiburgos.com'
-#SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 
 # Formatting for urls
 
@@ -60,12 +59,8 @@ DEFAULT_PAGINATION = 10
 PATH  = 'content'
 DELETE_OUTPUT_DIRECTORY = True
 
-DISQUS_SITENAME = 'jordiburgos'
 GITHUB_USERNAME = 'jmaister'
-GOOGLE_ANALYTICS_CODE = 'UA-45872762-1'
-GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 TWITTER_USERNAME = 'jordimaister'
-FACEBOOK_APPID = '378472698924914'
 
 # directories to be copied into output/static/
 STATIC_PATHS = [
