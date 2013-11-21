@@ -9,7 +9,7 @@ I'm a software engineer, curious about programming and technology.
 
 I work mainly with Java and Oracle. Also I like to play with Javascript, Python, Django, ...
 
-<div id="map_canvas" style="height: 300px; width:100%; margin:15px;">
+<div id="map_canvas" style="height: 300px; width:100%; padding:25px;">
 </div>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
