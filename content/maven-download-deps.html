@@ -1,0 +1,75 @@
+title: Download all project dependencies with Maven
+date: 2013-11-21 18:00
+author: Jordi Burgos
+category: Tips
+tags: maven
+slug: maven-download-dependencies
+draft: true
+
+Some days ago I had to make ...
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+        <modelVersion>4.0.0</modelVersion>
+    
+        <parent>
+            <groupId>com.test</groupId>
+            <artifactId>base</artifactId>
+            <version>1.0</version>
+        </parent>
+    
+        <groupId>com.test</groupId>
+        <artifactId>download-artifacts</artifactId>
+        <version>1.0</version>
+        <packaging>pom</packaging>
+    
+        <properties>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        </properties>
+    
+        <dependencies>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>goodproject</artifactId>
+                <version>1.0</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>webproject-war</artifactId>
+                <version>5.0</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>dashboard</artifactId>
+                <version>1.1</version>
+                <type>war</type>
+            </dependency>
+        </dependencies>
+    
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.8</version>
+                    <executions>
+                        <execution>
+                            <id>copy</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>copy-dependencies</goal>
+                            </goals>
+                            <configuration>
+                                <stripClassifier>true</stripClassifier>
+                                <stripVersion>true</stripVersion>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </project>
