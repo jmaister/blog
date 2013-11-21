@@ -67,6 +67,7 @@ STATIC_PATHS = [
     'img',
     'css',
     'js',
+    'images',
     'extra/robots.txt',
     'extra/humans.txt',
 ]
