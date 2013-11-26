@@ -2,9 +2,8 @@ title: Javascript export to Excel
 date: 2013-11-26 01:00
 author: Jordi Burgos
 category: Programming
-tags: javascript, export, excel
+tags: javascript, export, excel, project
 slug: javascript-export-to-excel
-status: draft
 
 Introduction
 ============
@@ -43,7 +42,7 @@ Let's make the export to Excel from an HTML table. The Excel 2007 file can be cr
         </tr>
     </table>
 
-And here is the code of the Javascript import from my github account [ExcellentExport](https://github.com/jmaister/excellentexport) and the code for the link. Check the **onclick** and **download** parameters.
+And here is the code of the Javascript import from my github account [ExcellentExport.js](https://github.com/jmaister/excellentexport) and the code for the link. Check the **onclick** and **download** parameters.
 
     <script src="https://raw.github.com/jmaister/excellentexport/master/excellentexport.js">
     <a download="somedata.xls"
@@ -76,4 +75,6 @@ Conclusion
 
 The data URL scheme gives endless possibilities to create files from the browser: images, ZIP files, CSV data, ...
 
-I'll be completing the ExcellentExport.js library to add more features. Check on github or this blog for updates.
+I'll be completing the functionality of [ExcellentExport.js](https://github.com/jmaister/excellentexport) library to add more features. Actually I just tested it on Firefox 25.0 and Chrome 31.0.
+
+Check on github or this blog for updates.
