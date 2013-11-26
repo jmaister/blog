@@ -4,7 +4,6 @@ author: Jordi Burgos
 category: Programming
 tags: tip, maven
 slug: maven-download-dependencies-folder
-draft: true
 
 Some days ago at work I had a new requirement, upload all our deliverable packages (\*.jar, \*.war) to a new service for a security analysis.
 

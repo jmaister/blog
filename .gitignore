@@ -10,3 +10,4 @@ env
 *.pid
 .settings
 jmtheme
+nbproject/*

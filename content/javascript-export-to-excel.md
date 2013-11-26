@@ -4,7 +4,7 @@ author: Jordi Burgos
 category: Programming
 tags: javascript, export, excel
 slug: javascript-export-to-excel
-draft: true
+status: draft
 
 Introduction
 ============
@@ -66,6 +66,7 @@ Working example
 </table>
 
 <script src="https://raw.github.com/jmaister/excellentexport/master/excellentexport.js"></script>
+
 <a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export table to Excel</a>
 
 Conclusion
