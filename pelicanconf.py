@@ -52,9 +52,9 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-####
+##
 ## MY CONFIG
-####
+##
 
 PATH  = 'content'
 DELETE_OUTPUT_DIRECTORY = True
@@ -79,3 +79,25 @@ EXTRA_PATH_METADATA = {
 THEME = './jmtheme'
 
 DEFAULT_DATE_FORMAT = ('%d %b %Y')
+
+
+##
+## PLUGINS
+##
+
+PLUGIN_PATH = './pelican-plugins'
+PLUGINS=['sitemap',]
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.75,
+        'indexes': 0.5,
+        'pages': 0.75
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'weekly'
+    }
+}
