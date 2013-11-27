@@ -44,7 +44,7 @@ Let's make the export to Excel from an HTML table. The Excel 2007 file can be cr
 
 And here is the code of the Javascript import from my github account [ExcellentExport.js](https://github.com/jmaister/excellentexport) and the code for the link. Check the **onclick** and **download** parameters.
 
-    <script src="https://raw.github.com/jmaister/excellentexport/master/excellentexport.js">
+    <script src="excellentexport.js">
     <a download="somedata.xls"
         href="#"
         onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">
@@ -66,7 +66,7 @@ Working example
     </tr>
 </table>
 
-<script src="https://raw.github.com/jmaister/excellentexport/master/excellentexport.js"></script>
+<script src="/js/excellentexport.js"></script>
 
 <a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export table to Excel</a>
 
