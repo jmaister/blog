@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 MARKUP = ('md', 'html')
 
@@ -48,6 +49,8 @@ SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
 GRAVATAR_IMAGE='http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300'
 # - For linking to g+
 GOOGLE_PLUS_ID=105036003303074734569
+# - Current date
+CURRENT_DATE = datetime.now()
 
 EMAIL = 'jordiburgos@gmail.com'
 DISPLAY_PAGES_ON_MENU = True
