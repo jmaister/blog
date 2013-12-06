@@ -47,7 +47,7 @@ SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
 # - Gravatar, for thumbnails
 GRAVATAR_IMAGE='http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300'
 # - For linking to g+
-GOOGLE_PLUS_ID=109412257237874861202
+GOOGLE_PLUS_ID=105036003303074734569
 
 EMAIL = 'jordiburgos@gmail.com'
 DISPLAY_PAGES_ON_MENU = True
