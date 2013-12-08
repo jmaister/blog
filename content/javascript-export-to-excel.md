@@ -29,6 +29,7 @@ So cool right? :)
 
 Let's make the export to Excel from an HTML table. The Excel 2007 file can be created on the fly. Here is the table:
 
+    :::html
     <table id="datatable">
         <tr>
             <td>100</td>
@@ -44,6 +45,7 @@ Let's make the export to Excel from an HTML table. The Excel 2007 file can be cr
 
 And here is the code of the Javascript import from my github account [ExcellentExport.js](https://github.com/jmaister/excellentexport) and the code for the link. Check the **onclick** and **download** parameters.
 
+    :::html
     <script src="excellentexport.js">
     <a download="somedata.xls"
         href="#"

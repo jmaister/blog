@@ -35,6 +35,7 @@ Personalization
 
 Option to add a list of icons pointing to the common social sites. Also the email icon.
 
+    :::python
     # Social widget
     SOCIAL = (
         ('twitter', 'http://twitter.com/XXXXXX'),
@@ -45,21 +46,25 @@ Option to add a list of icons pointing to the common social sites. Also the emai
 
 Social buttons on each article for sharing. Just add value to this variables.
 
+    :::python
     GITHUB_USERNAME = 'jmaister'
     TWITTER_USERNAME = 'jordimaister'
     FACEBOOK_APPID = '999......999'
 
 Disqus comments:
 
+    :::python
     DISQUS_SITENAME = 'jordiburgos'
     
 Google analytics:
 
+    :::python
     GOOGLE_ANALYTICS_CODE = 'UA-9999999-1'
     GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 
 Icons for pages to show on the menu. Add "icon" value on the page.
 
+    :::python
     icon: trophy
 
 
