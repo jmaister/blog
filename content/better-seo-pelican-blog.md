@@ -1,5 +1,5 @@
 title: Better SEO for your blog
-date: 2013-12-06 20:00
+date: 2013-12-08 02:00
 author: Jordi Burgos
 category: Technology
 tags: seo, google, blog, pelican
