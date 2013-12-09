@@ -18,11 +18,11 @@ ARTICLE_SAVE_AS = "post/{date:%Y}/{slug}.html"
 ARTICLE_LANG_URL = "post/{date:%Y}/{slug}-{lang}.html"
 ARTICLE_LANG_SAVE_AS  = "post/{date:%Y}/{slug}-{lang}.html"
 
-CATEGORY_URL = "category/{slug}"
-CATEGORY_SAVE_AS = "category/{slug}/index.html"
+CATEGORY_URL = "category/{slug}.html"
+CATEGORY_SAVE_AS = "category/{slug}.html"
 
-TAG_URL = "tag/{slug}/"
-TAG_SAVE_AS = "tag/{slug}/index.html"
+TAG_URL = "tag/{slug}.html"
+TAG_SAVE_AS = "tag/{slug}.html"
 
 TIMEZONE = 'Europe/Madrid'
 
