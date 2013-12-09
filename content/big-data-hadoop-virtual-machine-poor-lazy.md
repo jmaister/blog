@@ -51,7 +51,7 @@ For testing that it works, let's run a little test using Hadoop.
 Upload data to HDFS
 -------------------
 
-First, the data. To upload data into Hadoop environment, we use HDFS (Hadoop Distributed File System). It holds and manages the files and allows access to the processes. In a multi-server environment, HDFS would replicate and share data between several machines.
+First, the data. To allow access to the data into Hadoop environment, we use HDFS (Hadoop Distributed File System). It holds and manages the files and allows access to the processes. In a multi-server environment, HDFS would replicate and share data between several machines.
 
 hdfs dfs -mkdir boe
 
