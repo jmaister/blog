@@ -5,6 +5,8 @@ category: Technology
 tags: seo, google, blog, pelican
 slug: better-seo-pelican-blog
 
+***Check the creation of the theme on [Creating a Pelican theme with Bootstrap](create-pelican-theme-bootstrap.html)***
+
 For having a better exposure of our blog (or any page) on Internet, one of the important things is to have a good position on search results.
 
 The techniques used to achieve this are called **SEO**, *Search Engine Optimization*.
