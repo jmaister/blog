@@ -4,7 +4,6 @@ author: Jordi Burgos
 category: Programming
 tags: java, hadoop, maven
 slug: java-hadoop-maven
-status: draft
 
 For running a Hadoop job written in Java, it is needed to create a Jar file with the compiled classes and also include another dependencies of out code. This can be very time consuming if we do not automatise the tasks.
 
@@ -96,3 +95,9 @@ Conclusion
 After implementing the pom.xml, all the deployment of the Hadoop job is automatized. We only need to focus on code now.
 
 It is not needed to follow the steps for starting a new development. Just download the code from [WordCount](https://github.com/jmaister/wordcount) on my GitHub account. Adapt it to your needs and start Hadooping.
+
+<div class="center" markdown="1">
+
+![Elephant kick]({filename}/images/elephant-ball.gif)
+
+</div>
