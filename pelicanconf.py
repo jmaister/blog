@@ -35,20 +35,12 @@ TRANSLATION_FEED_ATOM = None
 FEED_RSS = 'feeds/all.rss.xml'
 
 
-# Blogroll
-#LINKS =  (('GitHub', 'http://github.com/jmaister'),)
-
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
           ('github', 'http://github.com/jmaister'),
           #('facebook', 'http://www.facebook.com/jordiburgos'),
           )
 
-# SEO
-# - Gravatar, for thumbnails
-GRAVATAR_IMAGE='http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300'
-# - For linking to g+
-GOOGLE_PLUS_ID=105036003303074734569
 # - Current date
 CURRENT_DATE = datetime.now()
 
@@ -58,18 +50,12 @@ DISPLAY_CATEGORIES_ON_MENU = True
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
 ##
 ## MY CONFIG
 ##
 
 PATH  = 'content'
 DELETE_OUTPUT_DIRECTORY = True
-
-GITHUB_USERNAME = 'jmaister'
-TWITTER_USERNAME = 'jordimaister'
 
 # directories to be copied into output/static/
 STATIC_PATHS = [
@@ -100,13 +86,13 @@ PLUGINS=['sitemap',]
 SITEMAP = {
     'format': 'xml',
     'priorities': {
-        'articles': 0.75,
+        'articles': 0.99,
         'indexes': 0.5,
         'pages': 0.75
     },
     'changefreqs': {
         'articles': 'daily',
         'indexes': 'daily',
-        'pages': 'weekly'
+        'pages': 'daily'
     }
 }
