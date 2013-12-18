@@ -4,6 +4,7 @@ author: Jordi Burgos
 category: Programming
 tags: javascript, html, web, tools
 slug: javascript-html-online-web-tools
+summary: Here are some useful tools for developing, investigating, web scraping... Mainly for Javascript and HTML.
 js: /js/tools.js
 
 <style>
