@@ -26,6 +26,7 @@ GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 FACEBOOK_APPID = '378472698924914'
 GITHUB_USERNAME = 'jmaister'
 TWITTER_USERNAME = 'jordimaister'
+REDDIT_USERNAME = 'jordimaister'
 
 # SEO
 # - For linking to g+
