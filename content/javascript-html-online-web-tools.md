@@ -11,11 +11,18 @@ js: /js/tools.js
 .result {
     background-color: #F0F0F0;
 }
+.tall {
+    height: 150px !important;
+}
 </style>
 
 Here are some useful tools for developing, investigating, web scraping... Mainly for **Javascript** and **HTML**.
 
 I'll be adding tools as they are developed, needed or asked. **Use the comments!**
+
+**Changes:**
+- v1: Base64, URL encode, time and date, regular expressions (RegEx), numbers
+- v2: JSON formatter
 
 
 Encoding/Decoding
@@ -44,16 +51,14 @@ Time and Date
 
 <div markdown=0>
 <div class="row">
-<div class="col-sm-3">
+<div class="col-sm-4">
 Milliseconds:<br/><textarea id='millis' class="form-control">1000000</textarea>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 Date local timezone:<br/><textarea id='date' class="form-control result">1000000</textarea>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 Date UTC:<br/><textarea id='date-utc' class="form-control result">1000000</textarea>
-</div>
-<div class="col-sm-3">
 </div>
 </div>
 </div>
@@ -118,5 +123,23 @@ octal:<br/><textarea id='octal' class="form-control result">999</textarea>
 </div>
 <div class="col-sm-3">
 hexadecimal:<br/><textarea id='hexadecimal' class="form-control result">999</textarea>
+</div>
+</div>
+
+JSON Formatter
+==============
+
+<div markdown=0>
+<div class="row">
+<div class="col-sm-6">
+JSON input:<br/><textarea id='json' class="form-control tall">{"prop1"    : 3,   "the_array"   :  ["a"
+,"b",
+"c"], "prop2"
+:
+"string"}</textarea>
+</div>
+<div class="col-sm-6">
+JSON formatted:<br/><textarea id='jsonresult' class="form-control result tall">{...}</textarea>
+</div>
 </div>
 </div>
