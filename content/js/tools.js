@@ -113,16 +113,8 @@ $('#json').keyup(function(){
     try {
         var json = $('#json').val();
         console.log(json);
-        //json = json.replace('\n', '', 'g');
         var jsonObj = JSON.parse(json);
         var fmt = JSON.stringify(jsonObj, null, "    ");
-        console.log(fmt);
-        /*
-        fmt = fmt.replace(', ', ',\n', 'g');
-        fmt = fmt.replace('\\n', '\n', 'g');
-        fmt = fmt.replace('[', '[\n', 'g');
-        fmt = fmt.replace(']', ']\n', 'g');
-        */
         $('#jsonresult').val(fmt);
     } catch (e) {
         $('#jsonresult').val(e);
