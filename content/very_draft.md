@@ -8,3 +8,8 @@ status: draft
 
 Title
 =====
+
+
+<div class="center" markdown="1">
+![Not bad]({filename}/images/meme/not_bad.jpg)
+</div>
