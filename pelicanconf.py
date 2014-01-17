@@ -65,11 +65,17 @@ STATIC_PATHS = [
     'images',
     'extra/robots.txt',
     'extra/humans.txt',
+    'extra/google40f5a38880d4cc70',
+    'extra/favicon.ico',
 ]
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/humans.txt': {'path': 'humans.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/google40f5a38880d4cc70': {'path': 'google40f5a38880d4cc70.html'},
 }
+
 
 THEME = './jmtheme'
 
@@ -96,3 +102,8 @@ SITEMAP = {
         'pages': 'daily'
     }
 }
+
+# Test disqus
+DISQUS_SITENAME = 'jordiburgostest'
+DISQUS_ID_SUFFIX = '_test'
+

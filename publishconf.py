@@ -21,6 +21,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = 'jordiburgos'
+DISQUS_ID_SUFFIX = '_prod'
 GOOGLE_ANALYTICS_CODE = 'UA-45872762-1'
 GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 FACEBOOK_APPID = '378472698924914'

@@ -12,3 +12,4 @@ env
 jmtheme
 nbproject
 pelican-plugins
+deploy.bat
