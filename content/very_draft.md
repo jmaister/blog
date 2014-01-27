@@ -2,8 +2,8 @@ title: Draft title
 date: 2013-11-26 01:00
 author: Jordi Burgos
 category: Programming
-tags: javascript, export, excel, project
-slug: javascript-export-to-excel
+tags: draft, article
+slug: draft-article
 status: draft
 
 Title
