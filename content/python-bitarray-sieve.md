@@ -11,7 +11,7 @@ This method exchanges the CPU intense calculations by storage. Instead of calcul
 
 Here is the first version of my solution made in Python.
 
-The bitarray started as a solution for a programming contest where the problem was to find the n-th number missing on a 8 GB file full of integers.
+The [bitarray](https://github.com/jmaister/bitarray) started as a solution for a programming contest where the problem was to find the n-th number missing on a 8 GB file full of integers.
 
 BitArray
 ========
