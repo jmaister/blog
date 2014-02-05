@@ -22,7 +22,7 @@ The joystick and button positions are taken from [http://www.slagcoin.com/joysti
 <a href="http://imgur.com/ebnAn0v"><img src="http://i.imgur.com/ebnAn0vl.jpg" title="Hosted by imgur.com"/></a>
 </div>
 
-For decorating of the box, I used a plastic paper that is printed with a carbon fiver finish. The paper has a sticky side, so it sticks to the sides of the box.
+For decorating of the box, I used a plastic paper that is printed with a carbon fibre finish. The paper has a sticky side, so it sticks to the sides of the box.
 
 After sticking the paper to the top of the box, I cut the holes of the buttons with a blade. Now all the holes for the buttons and joysticks are visible.
 
