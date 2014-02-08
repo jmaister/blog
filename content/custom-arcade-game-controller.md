@@ -18,17 +18,13 @@ First of all, construct the box where all the components will be mounted. I used
 
 The joystick and button positions are taken from [http://www.slagcoin.com/joystick/layout.html](http://www.slagcoin.com/joystick/layout.html). I just print the patter that I liked and then drilled the holes with a spade drill bit of 28mm (1.1 inch) that is the diameter of the buttons.
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/ebnAn0v"><img src="http://i.imgur.com/ebnAn0vl.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/ebnAn0v"><img class="img-responsive center-block" src="http://i.imgur.com/ebnAn0vl.jpg" title="Hosted by imgur.com"/></a>
 
 For decorating of the box, I used a plastic paper that is printed with a carbon fibre finish. The paper has a sticky side, so it sticks to the sides of the box.
 
 After sticking the paper to the top of the box, I cut the holes of the buttons with a blade. Now all the holes for the buttons and joysticks are visible.
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/PpEDA7k"><img src="http://i.imgur.com/PpEDA7kl.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/PpEDA7k"><img class="img-responsive center-block" src="http://i.imgur.com/PpEDA7kl.jpg" title="Hosted by imgur.com"/></a>
 
 Buy the parts
 =============
@@ -37,9 +33,7 @@ I bought a kit that ships with all the required parts. The 2 joysticks, 16 butto
 
 And the most important part, an USB circuit to connect the joysticks and buttons to the computer. It has connections for UP, DOWN, LEFT, RIGHT and up to 12 buttons per player. When connected to the computer it appears as 2 joysticks with 12 buttons.
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/kX7BxPj"><img src="http://i.imgur.com/kX7BxPjl.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/kX7BxPj"><img class="img-responsive center-block" src="http://i.imgur.com/kX7BxPjl.jpg" title="Hosted by imgur.com"/></a>
 
 This is usually called Jamma to USB. And comes with all the cables for connecting the micro switches to the board.
 
@@ -48,28 +42,20 @@ Assembly
 
 With the box decorated, I started to assemble the components. First, place the joysticks with 4 screws each. Then, the buttons with its plastic nuts.
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/auCqnvA"><img src="http://i.imgur.com/auCqnvAl.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/auCqnvA"><img class="img-responsive center-block" src="http://i.imgur.com/auCqnvAl.jpg" title="Hosted by imgur.com"/></a>
 
 Cables, cables and more cables! Each joystick has 8 cables, 4 for the directions and 4 with the connection to ground. And each button has 2 connections, data and ground.
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/aH7fjtf"><img src="http://i.imgur.com/aH7fjtfl.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/aH7fjtf"><img class="img-responsive center-block" src="http://i.imgur.com/aH7fjtfl.jpg" title="Hosted by imgur.com"/></a>
 
 The final result !!!
 
-<div class="center" markdown="1">
-<a href="http://imgur.com/jU5QLxl"><img src="http://i.imgur.com/jU5QLxll.jpg" title="Hosted by imgur.com"/></a>
-</div>
+<a href="http://imgur.com/jU5QLxl"><img class="img-responsive center-block" src="http://i.imgur.com/jU5QLxll.jpg" title="Hosted by imgur.com"/></a>
 
 Full gallery of images
 ======================
 
-<div class="center" markdown="1">
 <iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/96I2V/embed"></iframe>
-</div>
 
 Conclusion
 ==========
