@@ -16,7 +16,7 @@ The box
 
 First of all, construct the box where all the components will be mounted. I used MDF wood because it is cheap, durable and it will not be seen when finished.
 
-The joystick and button positions are taken from [http://www.slagcoin.com/joystick/layout.html](http://www.slagcoin.com/joystick/layout.html). I just print the patter that I liked and then drilled the holes with a spade drill bit of 28mm (1.1 inch) that is the diameter of the buttons.
+The joystick and button positions are taken from [http://www.slagcoin.com/joystick/layout.html](http://www.slagcoin.com/joystick/layout.html). I just printed the pattern for the buttons that I liked and then drilled the holes with a spade drill bit of 28mm (1.1 inch) that is the diameter of the buttons.
 
 <a href="http://imgur.com/ebnAn0v"><img class="img-responsive center-block" src="http://i.imgur.com/ebnAn0vl.jpg" title="Hosted by imgur.com"/></a>
 
