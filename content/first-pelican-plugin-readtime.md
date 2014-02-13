@@ -46,6 +46,31 @@ The information is stored on the *content_object* parameter for later access on 
             "minutes": minutes,
         }
 
+Calculations
+============
+
+To calculate the minutes needed, first I need to count the number of words of the article. This is done by stripping all
+the HTML tags of the content and counting the words.
+
+    :::python
+    text = strip_tags(content)
+    words = re.split(r'[^0-9A-Za-z]+', text)
+    num_words = len(words)
+
+The other parameter needed is the **words per minute** taht a person can read. As wikipedia suggests on various
+articles, [Reading process](http://en.wikipedia.org/wiki/Reading_%28process%29) or
+[Words per minute](http://en.wikipedia.org/wiki/Words_per_minute), I stimated that the parameter is 200 words per minute.
+
+    :::python
+    WPM = 200.0
+    
+And the *complex* arithmetic.
+
+    :::python
+    minutes = int(math.ceil(num_words / WPM))
+    if minutes == 0:
+        minutes = 1
+ 
 
 Usage
 =====
