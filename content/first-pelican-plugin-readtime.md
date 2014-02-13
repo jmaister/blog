@@ -1,4 +1,4 @@
-title: My first Pelican plugin: readtime
+title: My first Pelican plugin: readtime - Calculate the reading time of the articles
 date: 2014-02-13 23:00
 author: Jordi Burgos
 category: Programming
