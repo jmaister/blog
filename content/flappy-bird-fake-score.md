@@ -1,4 +1,4 @@
-title: Flappy Bird fake score generator HTML5
+title: Flappy Bird fake score generator in HTML5
 date: 2014-02-15 12:00
 author: Jordi Burgos
 category: Programming
