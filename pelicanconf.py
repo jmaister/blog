@@ -39,6 +39,7 @@ FEED_RSS = 'feeds/all.rss.xml'
 SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
           ('github', 'http://github.com/jmaister'),
           #('facebook', 'http://www.facebook.com/jordiburgos'),
+          ('google-plus', 'https://plus.google.com/105036003303074734569?rel=author')
           )
 
 # - Current date
