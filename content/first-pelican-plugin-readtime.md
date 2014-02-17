@@ -7,7 +7,7 @@ slug: first-pelican-plugin-readtime
 
 As I have seen in other blogs, I wanted to have a reading time estimation on my articles.
 
-I'm using [Pelican](getpelican.com) as blog engine and it allows to write your
+I'm using [Pelican](http://getpelican.com) as blog engine and it allows to write your
 own plugins to process articles and pages of your blog. It is developed using Python, check the code on the github repository of [readtime](https://github.com/jmaister/readtime).
 
 You can see the results on this screenshot:
