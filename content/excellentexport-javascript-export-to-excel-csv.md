@@ -6,9 +6,9 @@ tags: javascript, export, excel, project
 slug: excellentexport-javascript-export-to-excel-csv
 summary: The [ExcellentExport.js](https://github.com/jmaister/excellentexport) library is having a lot of visits, from people coming directly to the page orredirected by search engines. So, I decided to update it.
 
-<div class="alert alert-info">
+<div class="alert alert-info" markdown="1">
 
-Check the previous article for more information on: <a href="/post/2013/javascript-export-to-excel.html">Javascript export to Excel</a>
+Check the previous article for more information on: [Javascript export to Excel]({filename}/javascript-export-to-excel.md)
 
 </div>
 

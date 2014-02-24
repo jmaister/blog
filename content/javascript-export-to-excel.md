@@ -5,6 +5,13 @@ category: Programming
 tags: javascript, export, excel, project
 slug: javascript-export-to-excel
 
+<div class="alert alert-info" markdown="1">
+
+Check the updated article on: [ExcellentExport.js update]({filename}/excellentexport-javascript-export-to-excel-csv.md)
+
+</div>
+
+
 Introduction
 ============
 
