@@ -9,8 +9,6 @@ I changed the blog comment system. Now powered by [IntenseDebate](http://www.int
 
 Disqus was giving a lot of headaches. The comments were appearing on all the pages, mixed comments between articles, and they were supposed to be separated by article.
 
-As a joke, 
-
 Installing
 ==========
 
