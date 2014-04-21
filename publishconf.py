@@ -20,8 +20,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = 'jordiburgos'
-DISQUS_ID_SUFFIX = '_prod'
+#DISQUS_SITENAME = 'jordiburgos'
+#DISQUS_ID_SUFFIX = '_prod'
 GOOGLE_ANALYTICS_CODE = 'UA-45872762-1'
 GOOGLE_ANALYTICS_NAME = 'jordiburgos.com'
 FACEBOOK_APPID = '378472698924914'
@@ -34,3 +34,6 @@ REDDIT_USERNAME = 'jordimaister'
 GOOGLE_PLUS_ID=105036003303074734569
 # - Gravatar, for thumbnails
 GRAVATAR_IMAGE='http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300'
+
+# IntenseDebate account id
+INTENSEDEBATE_ACCOUNT = '4694cdcf34649ebd0124a7e3d7e98a5c'

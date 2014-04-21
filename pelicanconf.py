@@ -104,7 +104,3 @@ SITEMAP = {
     }
 }
 
-# Test disqus
-DISQUS_SITENAME = 'jordiburgostest'
-DISQUS_ID_SUFFIX = '_test'
-
