@@ -1,5 +1,5 @@
 title: ExcellentExport.js update: Javascript export to Excel and CSV
-date: 2014-02-18 23:00
+date: 2014-04-24 20:00
 author: Jordi Burgos
 category: Programming
 tags: javascript, export, excel, project
@@ -11,21 +11,29 @@ summary: The [ExcellentExport.js](https://github.com/jmaister/excellentexport) l
 Check the previous article for more information on: [Javascript export to Excel]({filename}/javascript-export-to-excel.md)
 
 </div>
+<div class="alert alert-info" markdown="1">
+
+Updated to v1.4
+
+</div>
 
 The [ExcellentExport](https://github.com/jmaister/excellentexport) library is having a lot of visits, from people coming directly to the page or
 redirected by search engines. So, I decided to update it.
 
 I have got some ideas from comments on the blog or discussions on reddit.
 
-Download the new version from: [ExcellentExport.js v1.3](https://github.com/jmaister/excellentexport/releases/tag/v1.3)
+Download the new version from: [ExcellentExport.js v1.4](https://github.com/jmaister/excellentexport/releases/tag/v1.4)
 
 New Changes
 ===========
 
-IE6-IE9
+UTF-8
+-----
+Now the export data supports UTF-8 characters.
+
+IE6-IE8
 -------
-I've added support for old browsers, this is IE6 to IE9. These browsers do not provide the funcion *window.btoa(str)*,
-so the code needs a Base64 encode function.
+IE8 or lower do not support *data:* url schema.
 
 CSV
 ---
@@ -35,21 +43,31 @@ Working example
 ===============
     
 <table class="table table-bordered" id="datatable" style="border: 1px solid black">
-    <tr>
-        <td>Title 1</td>
-        <td>Title 2</td>
-        <td>Title 3</td>
-    </tr>
-    <tr>
-        <td>100</td>
-        <td>200</td>
-        <td>300</td>
-    </tr>
-    <tr>
-        <td>400</td>
-        <td>500</td>
-        <td>600</td>
-    </tr>
+            <tr>
+                <th>Column 1</th>
+                <th>Column "cool" 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+            <tr>
+                <td>100,111</td>
+                <td>200</td>
+                <td>300</td>
+                <td>áéíóú</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+                <td>àèìòù</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>More text</td>
+                <td>Text with
+                new line</td>
+                <td>ç ñ ÄËÏÖÜ äëïöü</td>
+            </tr>
 </table>
 
 <script src="/js/excellentexport.js"></script>
