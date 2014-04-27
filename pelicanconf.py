@@ -93,14 +93,14 @@ PLUGINS=['sitemap', 'readtime']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
-        'articles': 0.99,
+        'articles': 0.9,
         'indexes': 0.5,
-        'pages': 0.75
+        'pages': 0.3
     },
     'changefreqs': {
         'articles': 'daily',
         'indexes': 'daily',
-        'pages': 'daily'
+        'pages': 'monthly'
     }
 }
 
