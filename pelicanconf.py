@@ -87,7 +87,7 @@ DEFAULT_DATE_FORMAT = ('%d %b %Y')
 ## PLUGINS
 ##
 
-PLUGIN_PATH = './pelican-plugins'
+PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS=['sitemap', 'readtime']
 
 SITEMAP = {
