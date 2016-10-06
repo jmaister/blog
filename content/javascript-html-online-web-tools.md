@@ -1,8 +1,8 @@
-title: Javascript/HTML online web tools
+title: Javascrip and HTML online web tools
 date: 2013-12-18 23:00
 author: Jordi Burgos
 category: Programming
-tags: javascript, html, web, tools
+tags: javascript, web, tools
 slug: javascript-html-online-web-tools
 summary: Here are some useful tools for developing, investigating, web scraping... Mainly for Javascript and HTML.
 js: /js/tools.js
@@ -21,8 +21,9 @@ Here are some useful tools for developing, investigating, web scraping... Mainly
 I'll be adding tools as they are developed, needed or asked. **Use the comments!**
 
 **Changes:**
-- v1: Base64, URL encode, time and date, regular expressions (RegEx), numbers
-- v2: JSON formatter
+
+* v1: Base64, URL encode, time and date, regular expressions (RegEx), numbers
+* v2: JSON formatter
 
 
 Encoding/Decoding
@@ -43,6 +44,7 @@ URL encode:<br/><textarea id='uencode' class="form-control result">uencode</text
 </div>
 <div class="col-sm-3">
 URL decode:<br/><textarea id='udecode' class="form-control result">udecode</textarea>
+</div>
 </div>
 </div>
 
@@ -91,6 +93,7 @@ Matches:<br/><textarea id='pattern-match' class="form-control result">match</tex
 Replaced:<br/><textarea id='pattern-replaced' class="form-control result">replaced</textarea>
 </div>
 </div>
+</div>
 
 Numbers
 =======
@@ -125,6 +128,7 @@ octal:<br/><textarea id='octal' class="form-control result">999</textarea>
 hexadecimal:<br/><textarea id='hexadecimal' class="form-control result">999</textarea>
 </div>
 </div>
+</div>
 
 JSON Formatter
 ==============
@@ -132,11 +136,7 @@ JSON Formatter
 <div markdown=0>
 <div class="row">
 <div class="col-sm-6">
-JSON input:<br/><textarea id='json' class="form-control tall">{"prop1"    : 3,   "the_array"   :  ["a"
-,"b",
-"c"], "prop2"
-:
-"string"}</textarea>
+JSON input:<br/><textarea id='json' class="form-control tall">{"prop1": 3, "the_array": ["a","b","c"], "prop2": "string"}</textarea>
 </div>
 <div class="col-sm-6">
 JSON formatted:<br/><textarea id='jsonresult' class="form-control result tall">{...}</textarea>
