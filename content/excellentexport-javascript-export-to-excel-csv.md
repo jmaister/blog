@@ -13,7 +13,7 @@ Check the previous article for more information on: [Javascript export to Excel]
 </div>
 <div class="alert alert-info" markdown="1">
 
-Updated to v1.4
+Updated to v2.0.0
 
 </div>
 
@@ -22,22 +22,43 @@ redirected by search engines. So, I decided to update it.
 
 I have got some ideas from comments on the blog or discussions on reddit.
 
-Download the new version from: [ExcellentExport.js v1.4](https://github.com/jmaister/excellentexport/releases/tag/v1.4)
+Download the new version from: [ExcellentExport.js v2.0.0](https://github.com/jmaister/excellentexport/releases/tag/2.0.0)
 
-New Changes
-===========
+Change history
+==============
 
-UTF-8
------
-Now the export data supports UTF-8 characters.
+### 1.0
 
-IE6-IE8
--------
-IE8 or lower do not support *data:* url schema.
+* Added Excel data export
 
-CSV
----
-Besides to the Excel export, I've added Export to CSV function.
+### 1.1
+
+* Added CSV data export
+
+### 1.3
+
+* Added minified version.
+
+### 1.4
+
+* Add LICENSE.txt with GPL v3.
+* UTF-8 characters fixed.
+
+### 1.5
+ 
+* Possibility to select a CSV delimiter.
+* Bower package available.
+* Compose package available.
+
+### 2.0.0
+
+* Now it can export to big files +2MB.
+* Minimum IE 11.
+* Links open with URL.createObjectURL(...).
+* NPM package available.
+* Using Semantic versioning (2.0.0 instead of 2.0). 
+* Module can be loaded standalone or with RequireJS.
+* Change license to MIT.
 
 Working example
 ===============
