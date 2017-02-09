@@ -4,7 +4,6 @@ author: Jordi Burgos
 category: Programming
 tags: big data, hadoop, virtualization, vagrant
 slug: big-data-hadoop-cluster-vagrant
-status: draft
 
 After having the data, next step is to have a Hadoop cluster to "upload" the data and run the processes.
 
