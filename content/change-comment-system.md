@@ -4,6 +4,9 @@ author: Jordi Burgos
 category: Misc
 tags: blog, comments
 slug: change-comment-system
+summary:
+    I changed the blog comment system. Now powered by [IntenseDebate](http://www.intensedebate.com).
+    Disqus was giving a lot of headaches. The comments were appearing on all the pages, mixed comments between articles, and they were supposed to be separated by article.
 
 I changed the blog comment system. Now powered by [IntenseDebate](http://www.intensedebate.com).
 
@@ -16,7 +19,7 @@ It just took 2 minutes to test the new commenting site, less than writing this a
 
 Here is the code on the Pelican template to show or hide the comments.
 
-    :::javascript
+    :::html+jinja
     {% if INTENSEDEBATE_ACCOUNT %}
     <script>
     var idcomments_acct = '{{INTENSEDEBATE_ACCOUNT}}';
