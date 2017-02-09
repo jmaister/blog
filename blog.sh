@@ -3,6 +3,9 @@ git pull
 cd jmtheme
 git pull
 cd ..
+cd pelican-plugins
+git pull
+cd ..
 make clean
 make publish
 rm -rf /home/jordibur/public_html/*
