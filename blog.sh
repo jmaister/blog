@@ -1,6 +1,6 @@
 cd blog
 git pull
-cd jmtheme
+cd jmtheme2
 git pull
 cd ..
 cd pelican-plugins
