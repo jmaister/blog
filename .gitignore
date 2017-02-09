@@ -10,6 +10,7 @@ env
 *.pid
 .settings
 jmtheme
+jmtheme2
 nbproject
 pelican-plugins
 deploy.bat
