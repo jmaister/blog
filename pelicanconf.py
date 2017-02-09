@@ -32,7 +32,7 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-FEED_RSS = 'feeds/all.rss.xml'
+FEED_RSS = None # 'feeds/all.rss.xml'
 
 
 # Social widget
@@ -78,7 +78,7 @@ EXTRA_PATH_METADATA = {
 }
 
 
-THEME = './jmtheme'
+THEME = './jmtheme2'
 
 DEFAULT_DATE_FORMAT = ('%d %b %Y')
 
@@ -104,3 +104,4 @@ SITEMAP = {
     }
 }
 
+GRAVATAR_IMAGE = 'https://gravatar.com/userimage/52050482/0bba5c8dfa3c8956951c861d8103fe43'
