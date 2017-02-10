@@ -45,6 +45,7 @@ SOCIAL = (('twitter', 'http://twitter.com/jordimaister'),
 # - Current date
 CURRENT_DATE = datetime.now()
 
+TWITTER_USERNAME = '@jordimaister'
 EMAIL = 'jordiburgos@gmail.com'
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
