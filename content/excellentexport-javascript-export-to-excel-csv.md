@@ -1,5 +1,5 @@
 title: ExcellentExport.js update: Javascript export to Excel and CSV
-date: 2014-04-24 20:00
+date: 2017-09-26 23:00
 author: Jordi Burgos
 category: Programming
 tags: javascript, export, excel, project
@@ -13,7 +13,7 @@ Check the previous article for more information on: [Javascript export to Excel]
 </div>
 <div class="alert alert-info" markdown="1">
 
-Updated to v2.0.0
+Updated to v2.1.0
 
 </div>
 
@@ -22,43 +22,66 @@ redirected by search engines. So, I decided to update it.
 
 I have got some ideas from comments on the blog or discussions on reddit.
 
-Download the new version from: [ExcellentExport.js v2.0.0](https://github.com/jmaister/excellentexport/releases/tag/2.0.0)
+Download the new version from: [ExcellentExport.js v2.1.0](https://github.com/jmaister/excellentexport/releases/tag/2.1.0)
 
 Change history
 ==============
 
-### 1.0
+# Revision history:
 
-* Added Excel data export
+### 3.0.0 (Work in progress)
 
-### 1.1
+* XLSX support. This bumps the build size to 639 KB.
+* New API: ExcellentExport.convert(...)
 
-* Added CSV data export
+### 2.1.0 (24/09/2017)
 
-### 1.3
+* Add Webpack build.
+* Create UMD JavaScript module. Library can be loaded as a module (import, RequireJS, AMD, etc...) or standalone as window.ExcelentExport.
 
-* Added minified version.
+### 2.0.3 (21/01/2017)
+
+* Fix export as a module.
+* Changed minifier to UglifyJS.
+
+### 2.0.2 (10/01/2017)
+
+* Fix CSV Chinese characters and other special characters display error in Windows Excel.
+* Fix URL.createObjectURL(...) on Firefox.
+
+
+### 2.0.0 (03/10/2016)
+
+* Now it can export to big files +2MB.
+* Minimum IE 11.
+* Links open with URL.createObjectURL(...).
+* NPM package available.
+* Using Semantic versioning (2.0.0 instead of 2.0).
+* Module can be loaded standalone or with RequireJS.
+* Change license to MIT.
+
+### 1.5
+
+* Possibility to select a CSV delimiter.
+* Bower package available.
+* Compose package available.
 
 ### 1.4
 
 * Add LICENSE.txt with GPL v3.
 * UTF-8 characters fixed.
 
-### 1.5
- 
-* Possibility to select a CSV delimiter.
-* Bower package available.
-* Compose package available.
+### 1.3
 
-### 2.0.0
+* Added minified version.
 
-* Now it can export to big files +2MB.
-* Minimum IE 11.
-* Links open with URL.createObjectURL(...).
-* NPM package available.
-* Using Semantic versioning (2.0.0 instead of 2.0). 
-* Module can be loaded standalone or with RequireJS.
-* Change license to MIT.
+### 1.1
+
+* Added CSV data export
+
+### 1.0
+
+* Added Excel data export
 
 Working example
 ===============
