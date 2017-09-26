@@ -24,9 +24,6 @@ I have got some ideas from comments on the blog or discussions on reddit.
 
 Download the new version from: [ExcellentExport.js v2.1.0](https://github.com/jmaister/excellentexport/releases/tag/2.1.0)
 
-Change history
-==============
-
 # Revision history:
 
 ### 3.0.0 (Work in progress)
@@ -83,8 +80,7 @@ Change history
 
 * Added Excel data export
 
-Working example
-===============
+# Working example
     
 <table class="table table-bordered" id="datatable" style="border: 1px solid black">
             <tr>
@@ -119,8 +115,7 @@ Working example
 * <a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export table to Excel</a>
 * <a download="somedata.csv" href="#" onclick="return ExcellentExport.csv(this, 'datatable');">Export table to CSV</a>
 
-Conclusion
-==========
+# Conclusion
 
 Now [ExcellentExport.js](https://github.com/jmaister/excellentexport) basically works on all browsers.
 It is ready for you to use on your projects.  
