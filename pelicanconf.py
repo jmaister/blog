@@ -84,6 +84,7 @@ THEME = './jmtheme2'
 DEFAULT_DATE_FORMAT = ('%d %b %Y')
 
 COINHIVE_ID = 'KQCpW8hVz1mn4HUDmsI8FJLaAOjycAlN'
+COINHIVE_OPTIONS = '{throttle: 0.2}'
 
 ##
 ## PLUGINS
