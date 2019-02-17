@@ -13,7 +13,7 @@ Check the previous article for more information on: [Javascript export to Excel]
 </div>
 <div class="alert alert-info" markdown="1">
 
-Updated to v2.1.0
+Updated to v3.3.0
 
 </div>
 
@@ -22,14 +22,35 @@ redirected by search engines. So, I decided to update it.
 
 I have got some ideas from comments on the blog or discussions on reddit.
 
-Download the new version from: [ExcellentExport.js v2.1.0](https://github.com/jmaister/excellentexport/releases/tag/2.1.0)
+Download the new version from: [ExcellentExport.js v3.3.0](https://github.com/jmaister/excellentexport/releases/tag/3.3.0)
 
 # Revision history:
 
-### 3.0.0 (Work in progress)
+### 3.3.0
 
-* XLSX support. This bumps the build size to 639 KB.
+* Remove columns by index
+* Filter rows by value
+* Updated build to Webpack 4.x.x
+
+### 3.2.1
+
+* Update npm dependencies to fix vulnerabilities
+
+### 3.2.0
+
+* Update npm dependencies to fix vulnerabilities
+
+### 3.1.0
+
+* Fix old API for base64 and escaping problem.
+
+### 3.0.0
+
+* XLSX support. This bumps the build size to 640 KB.
 * New API: ExcellentExport.convert(...)
+* Autogenerate download filename.
+* Data input from arrays or HTML Tables.
+* Multiple sheets for XLS or XLSX formats.
 
 ### 2.1.0 (24/09/2017)
 
@@ -114,6 +135,30 @@ Download the new version from: [ExcellentExport.js v2.1.0](https://github.com/jm
 
 * <a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export table to Excel</a>
 * <a download="somedata.csv" href="#" onclick="return ExcellentExport.csv(this, 'datatable');">Export table to CSV</a>
+
+# New API
+
+     ExcellentExport.convert(options, sheets);
+
+     Options:
+     {
+        anchor: String/Element,
+        format: 'xlsx'/'xls'/'csv',
+        filename: String
+     }
+
+     Sheet element configuration:
+     {
+        name: 'Sheet 1', // Sheet name
+        from: {
+            table: String/Element, // Table ID or table element
+            array: [...], // Array with data
+            arrayHasHeader: true, // Array first row is the header
+            removeColumns: [...], // Array of column indexes (from 0)
+            filterRowFn: function(row) {return true} // Return true to keep
+        },
+        ...
+     }
 
 # Conclusion
 
