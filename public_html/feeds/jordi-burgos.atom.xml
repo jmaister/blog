@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jordi Burgos</title><link href="http://jordiburgos.com/" rel="alternate"></link><link href="http://jordiburgos.com/feeds/jordi-burgos.atom.xml" rel="self"></link><id>http://jordiburgos.com/</id><updated>2017-09-26T23:00:00+02:00</updated><entry><title>ExcellentExport.js update: Javascript export to Excel and CSV</title><link href="http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html" rel="alternate"></link><updated>2017-09-26T23:00:00+02:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2017-09-26:post/2017/excellentexport-javascript-export-to-excel-csv.html</id><summary type="html">&lt;div class="alert alert-info"&gt;
+&lt;p&gt;Check the previous article for more information on: &lt;a href="http://jordiburgos.com/post/2013/javascript-export-to-excel.html"&gt;Javascript export to Excel&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
+&lt;p&gt;Updated to v3.3.0&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;a href="https://github.com/jmaister/excellentexport"&gt;ExcellentExport&lt;/a&gt; library is having a lot of visits, from people coming directly to the page or
+redirected by search engines. So, I decided to update it.&lt;/p&gt;
+&lt;p&gt;I have got some ideas from comments on the blog or discussions on reddit.&lt;/p&gt;
+&lt;p&gt;Download the new version from: &lt;a href="https://github.com/jmaister/excellentexport/releases/tag/3.3.0"&gt;ExcellentExport.js v3.3.0&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Revision history:&lt;/h1&gt;
+&lt;h3&gt;3.3.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove columns by index&lt;/li&gt;
+&lt;li&gt;Filter rows by value&lt;/li&gt;
+&lt;li&gt;Updated build to Webpack 4.x.x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3.2.1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update npm dependencies to fix vulnerabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3.2.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update npm dependencies to fix vulnerabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3.1.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix old API for base64 and escaping problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3.0.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;XLSX support. This bumps the build size to 640 KB.&lt;/li&gt;
+&lt;li&gt;New API: ExcellentExport.convert(...)&lt;/li&gt;
+&lt;li&gt;Autogenerate download filename.&lt;/li&gt;
+&lt;li&gt;Data input from arrays or HTML Tables.&lt;/li&gt;
+&lt;li&gt;Multiple sheets for XLS or XLSX formats.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2.1.0 (24/09/2017)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Webpack build.&lt;/li&gt;
+&lt;li&gt;Create UMD JavaScript module. Library can be loaded as a module (import, RequireJS, AMD, etc...) or standalone as window.ExcelentExport.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2.0.3 (21/01/2017)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix export as a module.&lt;/li&gt;
+&lt;li&gt;Changed minifier to UglifyJS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2.0.2 (10/01/2017)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix CSV Chinese characters and other special characters display error in Windows Excel.&lt;/li&gt;
+&lt;li&gt;Fix URL.createObjectURL(...) on Firefox.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2.0.0 (03/10/2016)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Now it can export to big files +2MB.&lt;/li&gt;
+&lt;li&gt;Minimum IE 11.&lt;/li&gt;
+&lt;li&gt;Links open with URL.createObjectURL(...).&lt;/li&gt;
+&lt;li&gt;NPM package available.&lt;/li&gt;
+&lt;li&gt;Using Semantic versioning (2.0.0 instead of 2.0).&lt;/li&gt;
+&lt;li&gt;Module can be loaded standalone or with RequireJS.&lt;/li&gt;
+&lt;li&gt;Change license to MIT.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;1.5&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Possibility to select a CSV delimiter.&lt;/li&gt;
+&lt;li&gt;Bower package available.&lt;/li&gt;
+&lt;li&gt;Compose package available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;1.4&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add LICENSE.txt with GPL v3.&lt;/li&gt;
+&lt;li&gt;UTF-8 characters fixed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;1.3&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added minified version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;1.1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added CSV data export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;1.0&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Excel data export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Working example&lt;/h1&gt;
+&lt;table class="table table-bordered" id="datatable" style="border: 1px solid black"&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Column 1&lt;/th&gt;
+                &lt;th&gt;Column "cool" 2&lt;/th&gt;
+                &lt;th&gt;Column 3&lt;/th&gt;
+                &lt;th&gt;Column 4&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;100,111&lt;/td&gt;
+                &lt;td&gt;200&lt;/td&gt;
+                &lt;td&gt;300&lt;/td&gt;
+                &lt;td&gt;áéíóú&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;400&lt;/td&gt;
+                &lt;td&gt;500&lt;/td&gt;
+                &lt;td&gt;600&lt;/td&gt;
+                &lt;td&gt;àèìòù&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Text&lt;/td&gt;
+                &lt;td&gt;More text&lt;/td&gt;
+                &lt;td&gt;Text with
+                new line&lt;/td&gt;
+                &lt;td&gt;ç ñ ÄËÏÖÜ äëïöü&lt;/td&gt;
+            &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;script src="/js/excellentexport.js"&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');"&gt;Export table to Excel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a download="somedata.csv" href="#" onclick="return ExcellentExport.csv(this, 'datatable');"&gt;Export table to CSV&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;New API&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nx"&gt;ExcellentExport&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;convert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;options&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;sheets&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+ &lt;span class="nx"&gt;Options&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+ &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;anchor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;Element&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nx"&gt;format&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;xlsx&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;xls&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;csv&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nx"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;
+ &lt;span class="p"&gt;}&lt;/span&gt;
+
+ &lt;span class="nx"&gt;Sheet&lt;/span&gt; &lt;span class="nx"&gt;element&lt;/span&gt; &lt;span class="nx"&gt;configuration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+ &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Sheet 1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Sheet name&lt;/span&gt;
+    &lt;span class="nx"&gt;from&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;table&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;Element&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Table ID or table element&lt;/span&gt;
+        &lt;span class="nx"&gt;array&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;...&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Array with data&lt;/span&gt;
+        &lt;span class="nx"&gt;arrayHasHeader&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Array first row is the header&lt;/span&gt;
+        &lt;span class="nx"&gt;removeColumns&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;...&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Array of column indexes (from 0)&lt;/span&gt;
+        &lt;span class="nx"&gt;filterRowFn&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;row&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;// Return true to keep&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="p"&gt;...&lt;/span&gt;
+ &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Now &lt;a href="https://github.com/jmaister/excellentexport"&gt;ExcellentExport.js&lt;/a&gt; basically works on all browsers.
+It is ready for you to use on your projects.  &lt;/p&gt;
+&lt;p&gt;Check on github or this blog for updates. &lt;a href="https://github.com/jmaister/excellentexport"&gt;ExcellentExport.js&lt;/a&gt;.&lt;/p&gt;</summary><category term="javascript"></category><category term="export"></category><category term="excel"></category><category term="project"></category></entry><entry><title>Change on the comment system</title><link href="http://jordiburgos.com/post/2014/change-comment-system.html" rel="alternate"></link><updated>2014-04-21T20:40:00+02:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-04-21:post/2014/change-comment-system.html</id><summary type="html">&lt;p&gt;I changed the blog comment system. Now powered by &lt;a href="http://www.intensedebate.com"&gt;IntenseDebate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Disqus was giving a lot of headaches. The comments were appearing on all the pages, mixed comments between articles, and they were supposed to be separated by article.&lt;/p&gt;
+&lt;h1&gt;Installing&lt;/h1&gt;
+&lt;p&gt;It just took 2 minutes to test the new commenting site, less than writing this article, and it works great.&lt;/p&gt;
+&lt;p&gt;Here is the code on the Pelican template to show or hide the comments.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nv"&gt;INTENSEDEBATE_ACCOUNT&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;idcomments_acct&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;INTENSEDEBATE_ACCOUNT&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;idcomments_post_id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt; &lt;span class="nv"&gt;article.slug&lt;/span&gt; &lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;idcomments_post_url&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;IDCommentsPostTitle&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;display:none&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;http://www.intensedebate.com/js/genericCommentWrapperV2.js&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endif&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;We have lost the previous comments, but we won a new commenting system that really works.&lt;/p&gt;
+&lt;p&gt;Keep commenting all the articles!!!&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Not bad" src="http://jordiburgos.com/images/meme/surprise.gif" /&gt;&lt;/p&gt;
+&lt;/div&gt;</summary><category term="blog"></category><category term="comments"></category></entry><entry><title>The smallest and easiest REST server in Python</title><link href="http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html" rel="alternate"></link><updated>2014-04-16T23:00:00+02:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-04-16:post/2014/smallest-easiest-rest-server-python.html</id><summary type="html">&lt;p&gt;I am creating a web application for writing. This is just the beginning and I am making some experiments.&lt;/p&gt;
+&lt;p&gt;I decided to use AngularJS for the interface, as it solves most of the problems of any web application interface. Templates, two-way data binding between template and code, easy REST actions, etc...&lt;/p&gt;
+&lt;p&gt;As I understand, I am just learning, AngularJS is mostly designed for using a REST server for the data load and store. Any server would work whenever it responds to REST requests. For this reason, this solution is the fastest and easiest for creating a REST server in Python.&lt;/p&gt;
+&lt;h1&gt;REST server with web.py&lt;/h1&gt;
+&lt;p&gt;Here is the python script to define and start the REST server.&lt;/p&gt;
+&lt;p&gt;It defines two endpoints, &lt;em&gt;/authors&lt;/em&gt; and &lt;em&gt;/suggest/[param1]/[param2]&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;web&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
+
+&lt;span class="c"&gt;# Define exposed URL&amp;#39;s&lt;/span&gt;
+&lt;span class="n"&gt;urls&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;#39;/authors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;authors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;#39;/suggest/(.*)/(.*)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;suggest&amp;#39;&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# Define the application&lt;/span&gt;
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;application&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;urls&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;globals&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+&lt;span class="n"&gt;AUTHORS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Miguel de Cervantes&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;William Shakespeare&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Francisco de Quevedo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="c"&gt;# Define the actions when the URL&amp;#39;s are called&lt;/span&gt;
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;authors&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;GET&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;authors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;AUTHORS&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;suggest&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;GET&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;words&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;AUTHORS&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;suggestions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_suggestions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;words&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;suggestions&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Error: author not found.&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="c"&gt;# Start the server&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Call using AngularJS&lt;/h1&gt;
+&lt;p&gt;The JavaScript code to make the request to the &lt;em&gt;/authors&lt;/em&gt; URL. It updates the &lt;em&gt;$scope.authors&lt;/em&gt; variable with the data received.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;AUTHOR_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://localhost:8080/authors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="nx"&gt;$http&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;AUTHOR_URL&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;success&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;status&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;success&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nx"&gt;$scope&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;authors&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;authors&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;status&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;error&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is the HTML code with the AngularJS directives to populate the data received to a SELECT component.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;select&lt;/span&gt; &lt;span class="na"&gt;ng-model=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;ng-options=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;a for a in authors&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;This solution is adequate if you need a REST server for learning or evaluating a new technology as it is easy and fast.
+It is also good for mocking REST responses for unit testing purposes.
+On next articles, I will show some samples of the AngularJS application.&lt;/p&gt;</summary><category term="AngularJS"></category><category term="Python"></category><category term="JSON"></category><category term="project"></category></entry><entry><title>Flappy Bird fake score generator in HTML5</title><link href="http://jordiburgos.com/post/2014/flappy-bird-fake-socre-generator-html5.html" rel="alternate"></link><updated>2014-02-15T12:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-02-15:post/2014/flappy-bird-fake-socre-generator-html5.html</id><summary type="html">&lt;p&gt;We all know how famous and viral went Flappy Bird. It is really hard to get a good score.&lt;/p&gt;
+&lt;p&gt;You can be playing for hours just getting crappy scores. That has ended.&lt;/p&gt;
+&lt;p&gt;Now you can fake your score with this app!!! Send the image to your friends, Twitter, Facebook, etc... Enjoy !&lt;/p&gt;
+&lt;h1&gt;How it's done&lt;/h1&gt;
+&lt;p&gt;The generator is done with the &lt;em&gt;canvas&lt;/em&gt; tag of HTML5. Also with a lot of patience cutting the numbers from the game.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;canvas&lt;/em&gt; tag allows to draw images. With some calculations about the with of each number,
+the score is drawn on a base picture of the "New score" screen. &lt;/p&gt;
+&lt;p&gt;I made the image draw and calculations with Javascript. Check on the source code if you are interested. &lt;/p&gt;
+&lt;h1&gt;Score Generator&lt;/h1&gt;
+&lt;p&gt;Insert score: &lt;input id="score" type="text"/&gt; &lt;button id="btn" onclick="draw()"&gt;Draw&lt;/button&gt;&lt;/p&gt;
+&lt;canvas id="canvas" width="720" height="1280"&gt;
+&lt;/canvas&gt;
+
+&lt;script src="/js/flappyfake.js"/&gt;</summary><category term="html5"></category><category term="javascript"></category></entry><entry><title>My first Pelican plugin: readtime - Calculate the reading time of the articles</title><link href="http://jordiburgos.com/post/2014/first-pelican-plugin-readtime.html" rel="alternate"></link><updated>2014-02-13T23:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-02-13:post/2014/first-pelican-plugin-readtime.html</id><summary type="html">&lt;p&gt;As I have seen in other blogs, I wanted to have a reading time estimation on my articles.&lt;/p&gt;
+&lt;p&gt;I'm using &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; as blog engine and it allows to write your
+own plugins to process articles and pages of your blog. It is developed using Python, check the code on the github repository of &lt;a href="https://github.com/jmaister/readtime"&gt;readtime&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can see the results on this screenshot:&lt;/p&gt;
+&lt;p&gt;&lt;img class="img-responsive center-block" src="/images/readtime1.png" title="readtime screnshoot."/&gt;&lt;/p&gt;
+&lt;h1&gt;Plugin development&lt;/h1&gt;
+&lt;p&gt;The Pelican plugins works with signals, they are like events. You can register a method on the signal interested.
+The method will be called each time that the signal is emited.&lt;/p&gt;
+&lt;p&gt;Here you can check the &lt;a href="http://docs.getpelican.com/en/3.3.0/plugins.html#list-of-signals"&gt;list of signals&lt;/a&gt; on the documentation.
+Each signal has its own parameters and details on when it is called.&lt;/p&gt;
+&lt;p&gt;The one I used is &lt;strong&gt;content_object_init&lt;/strong&gt;, it is called on each page or article is read. This is how the signal is registered:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pelican&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;signals&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;register&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;signals&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;content_object_init&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;calculate_readtime&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then, the calculations of the time needed for reading the article are done on the &lt;strong&gt;calculate_readtime&lt;/strong&gt; method.
+The information is stored on the &lt;em&gt;content_object&lt;/em&gt; parameter for later access on the templates.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;calculate_readtime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;content_object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;content_object&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_content&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content_object&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_content&lt;/span&gt;
+
+    &lt;span class="n"&gt;minutes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="n"&gt;calculations&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;
+
+    &lt;span class="n"&gt;content_object&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readtime&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s"&gt;&amp;quot;minutes&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;minutes&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Calculations&lt;/h1&gt;
+&lt;p&gt;To calculate the minutes needed, first I need to count the number of words of the article. This is done by stripping all
+the HTML tags of the content and counting the words.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;strip_tags&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;words&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;r&amp;#39;[^0-9A-Za-z]+&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;num_words&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;words&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The other parameter needed is the &lt;strong&gt;words per minute&lt;/strong&gt; taht a person can read. As wikipedia suggests on various
+articles, &lt;a href="http://en.wikipedia.org/wiki/Reading_%28process%29"&gt;Reading process&lt;/a&gt; or
+&lt;a href="http://en.wikipedia.org/wiki/Words_per_minute"&gt;Words per minute&lt;/a&gt;, I stimated that the parameter is 200 words per minute.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;WPM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;200.0&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And the &lt;em&gt;complex&lt;/em&gt; arithmetic.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;minutes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num_words&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;WPM&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;minutes&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;minutes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Usage&lt;/h1&gt;
+&lt;p&gt;To use it you have to add the plugin name to the &lt;strong&gt;pelicanconf.py&lt;/strong&gt; file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PLUGINS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then you can access the minutes variable to show on your &lt;strong&gt;article.html&lt;/strong&gt; template. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readtime&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;Read&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="n"&gt;article&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readtime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;minutes&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt; &lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="o"&gt;.&amp;lt;/&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;endif&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;It is very easy to create a Pelican plugin. You just need an idea and a little time to add new functionality
+for your favourite static blog engine.&lt;/p&gt;
+&lt;p&gt;&lt;img class="img-responsive center-block" src="/images/meme/dogeyes.gif" title="Dog eyes."/&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="blog"></category><category term="python"></category></entry><entry><title>Custom Arcade Game Controller</title><link href="http://jordiburgos.com/post/2014/custom-arcade-game-controller.html" rel="alternate"></link><updated>2014-02-05T22:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-02-05:post/2014/custom-arcade-game-controller.html</id><summary type="html">&lt;p&gt;I always liked arcade games. Since I was a child and I did not have enough money to play all that I wanted. Also now that I can play all the games using emulators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So I decided to make my own arcade game controller.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I made a controller for 2 player. It has 2 joysticks, 6 buttons per player, 1 and 2 player buttons, 2 pinball buttons on the sides and 2 service buttons. Total 18 buttons.&lt;/p&gt;
+&lt;h1&gt;The box&lt;/h1&gt;
+&lt;p&gt;First of all, construct the box where all the components will be mounted. I used MDF wood because it is cheap, durable and it will not be seen when finished.&lt;/p&gt;
+&lt;p&gt;The joystick and button positions are taken from &lt;a href="http://www.slagcoin.com/joystick/layout.html"&gt;http://www.slagcoin.com/joystick/layout.html&lt;/a&gt;. I just printed the pattern for the buttons that I liked and then drilled the holes with a spade drill bit of 28mm (1.1 inch) that is the diameter of the buttons.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/ebnAn0v"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/ebnAn0vl.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For decorating of the box, I used a plastic paper that is printed with a carbon fibre finish. The paper has a sticky side, so it sticks to the sides of the box.&lt;/p&gt;
+&lt;p&gt;After sticking the paper to the top of the box, I cut the holes of the buttons with a blade. Now all the holes for the buttons and joysticks are visible.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/PpEDA7k"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/PpEDA7kl.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Buy the parts&lt;/h1&gt;
+&lt;p&gt;I bought a kit that ships with all the required parts. The 2 joysticks, 16 buttons, 2 small buttons.&lt;/p&gt;
+&lt;p&gt;And the most important part, an USB circuit to connect the joysticks and buttons to the computer. It has connections for UP, DOWN, LEFT, RIGHT and up to 12 buttons per player. When connected to the computer it appears as 2 joysticks with 12 buttons.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/kX7BxPj"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/kX7BxPjl.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is usually called Jamma to USB. And comes with all the cables for connecting the micro switches to the board.&lt;/p&gt;
+&lt;h1&gt;Assembly&lt;/h1&gt;
+&lt;p&gt;With the box decorated, I started to assemble the components. First, place the joysticks with 4 screws each. Then, the buttons with its plastic nuts.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/auCqnvA"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/auCqnvAl.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cables, cables and more cables! Each joystick has 8 cables, 4 for the directions and 4 with the connection to ground. And each button has 2 connections, data and ground.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/aH7fjtf"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/aH7fjtfl.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The final result !!!&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/jU5QLxl"&gt;&lt;img class="img-responsive center-block" src="http://i.imgur.com/jU5QLxll.jpg" title="Hosted by imgur.com"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Full gallery of images&lt;/h1&gt;
+&lt;iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/96I2V/embed"&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;This controller is finished and works fine connected to a computer. However, the next step is to embed a Raspberry Pi inside the box and install the emulators. It will allow to play games just connecting an HDMI cable from the controller to a TV.&lt;/p&gt;</summary><category term="arcade"></category><category term="games"></category></entry><entry><title>Python bitarray and Sieve of Eratosthenes</title><link href="http://jordiburgos.com/post/2014/python-bitarray-sieve-Eratosthenes.html" rel="alternate"></link><updated>2014-01-27T21:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-01-27:post/2014/python-bitarray-sieve-Eratosthenes.html</id><summary type="html">&lt;p&gt;Some time ago, I was thinking about prime numbers and I found that it is possible to find prime numbers just with sums instead of divisions or remainders. As it was very simple approach, I thought that for sure, someone else found this solution already. And I was right, this algorithm is called &lt;a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes"&gt;Sieve of Eratosthenes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This method exchanges the CPU intense calculations by storage. Instead of calculating if a number is prime with divisions, it stores which numbers are not primes until a maximum, then the prime numbers are the ones that are not on the list. Very simple.&lt;/p&gt;
+&lt;p&gt;Here is the first version of my solution made in Python.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/jmaister/bitarray"&gt;bitarray&lt;/a&gt; started as a solution for a programming contest where the problem was to find the n-th number missing on a 8 GB file full of integers.&lt;/p&gt;
+&lt;h1&gt;BitArray&lt;/h1&gt;
+&lt;p&gt;The easy option to keep all the numbers that are not primes is to use a list. It is a valid solution but not the best, as each number would use 64 bits (Assumption for big numbers, as Python takes the best type for each number representation). The first 1.000.000 numbers would be stored on 7.62 MB of memory.&lt;/p&gt;
+&lt;p&gt;The minimum size of memory is the bit, so we can mark each number with just a bit. With this approach, a 1.000.000 would use 122 Kb of memory. Here is the implementation of a &lt;a href="https://github.com/jmaister/bitarray"&gt;BitArray&lt;/a&gt; in Python.&lt;/p&gt;
+&lt;p&gt;The program uses an array of 64 bit numbers (or 32 bits, depending on your processor) and each bit says if the number is marked or not. For example, the number 1, goes on the element 0 of the array and the bit 1. The number 63, goes on the element 1 of the array, position bit 32.&lt;/p&gt;
+&lt;table class="table border"&gt;
+    &lt;tr&gt;
+       &lt;td&gt;Array&lt;/td&gt;
+       &lt;td&gt;32 bits&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;element 0&lt;/td&gt;
+       &lt;td&gt;00000000000000000000000000000010&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;element 1&lt;/td&gt;
+       &lt;td&gt;10000000000000000000000000000000&lt;/td&gt; 
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The position of each number on the array and the position of the bit set or reset inside is calculated with bit arithmetic. Here is the code for the address calculations:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="c"&gt;# Depends on architecture&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;bitsstr&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;64bit&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bit_mask&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mh"&gt;0x0000003F&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bit_offset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;
+    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__get_address&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c"&gt;# position on the array&lt;/span&gt;
+    &lt;span class="n"&gt;bucket&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bit_offset&lt;/span&gt;
+    &lt;span class="c"&gt;# bit position on the element&lt;/span&gt;
+    &lt;span class="n"&gt;bit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bit_mask&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;bucket&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;How many numbers can hold ?&lt;/h1&gt;
+&lt;p&gt;For calculating all the primes until a certain number, we need to mark all those numbers in any way into memory. The bitarray just uses one bit per number. The architecture, you know 32 or 64 bits, does not affect to the amount of memory as the numbers use just 1 bit.&lt;/p&gt;
+&lt;p&gt;With 1 GB of memory, it is possible to hold the numbers from 0 to 8,589,934,592, this is &lt;strong&gt;1 * 1024 * 1024 * 1024 * 8&lt;/strong&gt;. &lt;/p&gt;
+&lt;table class="table bordered"&gt;
+&lt;tr&gt;&lt;td&gt;GB Memory&lt;/td&gt;&lt;td&gt;Numbers&lt;/td&gt;&lt;td&gt;Power of 2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;8,589,934,592&lt;/td&gt;&lt;td&gt;2^33&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;17,179,869,184&lt;/td&gt;&lt;td&gt;2^34&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;34,359,738,368&lt;/td&gt;&lt;td&gt;2^35&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;68,719,476,736&lt;/td&gt;&lt;td&gt;2^36&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;137,438,953,472&lt;/td&gt;&lt;td&gt;2^37&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;274,877,906,944&lt;/td&gt;&lt;td&gt;2^38&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;549,755,813,888&lt;/td&gt;&lt;td&gt;2^39&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;1,099,511,627,776&lt;/td&gt;&lt;td&gt;2^40&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1024&lt;/td&gt;&lt;td&gt;8,796,093,022,208&lt;/td&gt;&lt;td&gt;2^43&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This calculations are aproximations, the execution of the program would take a little more memory.&lt;/p&gt;
+&lt;h1&gt;How many memory would need the maximum prime number found ?&lt;/h1&gt;
+&lt;p&gt;The [http://en.wikipedia.org/wiki/Largest_known_prime_number] (http://en.wikipedia.org/wiki/Largest_known_prime_number) is 2^57,885,161 - 1, a number with 17,425,170 digits.&lt;/p&gt;
+&lt;p&gt;Using the previous table with the comparison between numbers and memory used, calculate the memory needed for the maximum prime number found is easy.
+1 Gigabyte holds from 0 to 2^33, 1 Terabyte holds from 0 to 2^43. So 2^57,885,161 - 1 can fit on (57,885,161 - 33) = 57,885,129 Gibabytes = 56,528.45 Terabytes = 55.20 Petabytes.&lt;/p&gt;
+&lt;p&gt;This sizes are unmanageable usin RAM memory, but it could be possible usin hard drives to store all the information.
+What would cost to store all that information on hard drives? A 4 TB SATA hard disk costs about 150 EUR (~205 USD). That would be 14,133 drives. &lt;strong&gt;About 2,119,800 EUR (2,898,025 USD)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Just for the hard drives. &lt;strong&gt;Anyone interested on funding the project ?&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Not bad" src="http://jordiburgos.com/images/meme/shut_up_take_money.jpg" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Optimization&lt;/h1&gt;
+&lt;p&gt;The storage admits some optimizations. The very easy is to skip all even numbers and change the kind of addressing of bits. All the even numbers are not primes.
+That would take the cost of the project to the half. Those 2,119,800 EUR (2,898,025 USD), would turn on &lt;strong&gt;1,059,900 EUR (1,449,201 USD)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1&gt;Conclusions&lt;/h1&gt;
+&lt;p&gt;This method to calculate primes is more CPU efficient than the usual with divisions if all the information fits on RAM memory. Its drawback is that trades CPU by storage.&lt;/p&gt;
+&lt;p&gt;The cost for using this algorithm in the real would be huge, but we just need to let the time pass and wait for the terabyte or petabyte RAM memory or hard drives.&lt;/p&gt;</summary><category term="python"></category><category term="math"></category></entry><entry><title>Fast Discovery programming</title><link href="http://jordiburgos.com/post/2014/fast-discovery-programming.html" rel="alternate"></link><updated>2014-01-04T20:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2014-01-04:post/2014/fast-discovery-programming.html</id><summary type="html">&lt;p&gt;I would like to introduce you the &lt;strong&gt;Fast Discovery&lt;/strong&gt; programming. It is based on the discovery on errors or failures as fast as possible to keep going on the good way to achieve the goals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fast Discovery&lt;/strong&gt;, comes from the concepts like fail-fast or fail-early, but fail is not what we want to achieve. What we want is to know what we are doing works. So that, &lt;em&gt;Discovery&lt;/em&gt; is a better term than &lt;em&gt;Fail&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This concept can be applied to many fields on your life, like engineering or design, but the below examples are especially for programming.&lt;/p&gt;
+&lt;p&gt;This tips can help to become faster at programming, saving time for thinking and make things, and not waiting for things to happen like restarting a server or wait for the "Compiling..." alert to be closed.&lt;/p&gt;
+&lt;h1&gt;IDE / Editor&lt;/h1&gt;
+&lt;p&gt;First of all, learn your IDE or editor. Learn how to use it, how it can help you on your workflow.&lt;/p&gt;
+&lt;h3&gt;Shotcuts&lt;/h3&gt;
+&lt;p&gt;Learn the shortcuts for the most common actions you usually do. Here are some examples for Eclipse, that you can do instead of moving the mouse wheel up and down or finding a menu options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To find and open a file, use &lt;em&gt;Alt + R&lt;/em&gt;. It shows a pop up, while you type it shows the files that follow that pattern. Wildcards '*' and '?' can be used.&lt;/li&gt;
+&lt;li&gt;Common for saving a file: &lt;em&gt;Shift + Alt + F&lt;/em&gt; to format the code and &lt;em&gt;Control + S&lt;/em&gt; to save the file.&lt;/li&gt;
+&lt;li&gt;Find some string in all file: &lt;em&gt;Control + H&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Customize the search options, just select the ones that you use. Probably it is just "File Search".
+&lt;div class="center" markdown="1"&gt;
+&lt;img alt="Search customize" src="http://jordiburgos.com/images/eclipse/search-customize.png" /&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;For faster results, select the folder or project you want to look for and check the option "Selected resources". It will not search in ALL the workspace
+&lt;div class="center" markdown="1"&gt;
+&lt;img alt="Search scope" src="http://jordiburgos.com/images/eclipse/search-scope.png" /&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You name them. Just look for your more used actions and try to find the shortcut on the menu.&lt;/p&gt;
+&lt;h3&gt;Selection&lt;/h3&gt;
+&lt;p&gt;These are the most important shotcuts! Too obvious for some, and very unknown for others. You loose important seconds by moving your hand to the mouse, and trying to select some words. Just use the keyboard.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Control + C for Copy&lt;/li&gt;
+&lt;li&gt;Control + V for Paste&lt;/li&gt;
+&lt;li&gt;Control + X for Cut&lt;/li&gt;
+&lt;li&gt;Shift + (up,down,left,right) for Selection&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Mouse Selection&lt;/h3&gt;
+&lt;p&gt;If there is no more choice and you use the mouse, keep in mind the tips below. You will not need to aim your selection like a &lt;em&gt;sniper&lt;/em&gt;. Try it now!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Double click: select a full word.&lt;/li&gt;
+&lt;li&gt;Double click + move: select full words while moving.&lt;/li&gt;
+&lt;li&gt;Triple click: select a full paragraph.&lt;/li&gt;
+&lt;li&gt;Triple click + move: select full paragraphs while moving.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unwanted pop-ups&lt;/h3&gt;
+&lt;p&gt;Fix common options or questions. How many times do you click on an "OK/Cancel" alert on each save or compile. Have you read it carefully? Is it a "Do not ask me again" checkbox? This can save some precious time.&lt;/p&gt;
+&lt;p&gt;On this example... yes click the checkbox "Run always in background", and then you can continue working while it executes. It will never show up again.
+&lt;div class="center" markdown="1"&gt;
+&lt;img alt="Search progress" src="http://jordiburgos.com/images/eclipse/search-progress.png" /&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h1&gt;Unit Testing&lt;/h1&gt;
+&lt;p&gt;Unit testing is good for testing, we all know it (well others just hate it). It can help also while we are coding. A piece of code does not need to be finished to be executed with a unit test. Either it is needed the unit test before the code, like on &lt;a href="http://en.wikipedia.org/wiki/Test-driven_development"&gt;Test-driven development (TDD)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While working on a piece of code, it is possible to isolate its execution with a unit test. With this it is not needed to start up a full application and test just what we want. So much time is saved until the code is finished and tested on the real application.&lt;/p&gt;
+&lt;h1&gt;Network&lt;/h1&gt;
+&lt;p&gt;Network times are always a pain. Try to make your workflow as offline as possible, by using a local server instead of a server located in another network.&lt;/p&gt;
+&lt;p&gt;Also make your tools not to connect to internet. For example: Maven has the &lt;em&gt;-o&lt;/em&gt; option to just use the local repository and do not connect to the remote repositories.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mvn -o install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;These are the goodnes of &lt;strong&gt;Fast Discovery&lt;/strong&gt; progarmming. Saving time, just a little or a lot, on each step of your workflow can significantly improve your speed at programming.&lt;/p&gt;
+&lt;p&gt;And more speed at programming means more results achieved. And that is good for your job. Do not work like this again:&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Waiting" src="http://jordiburgos.com/images/waiting.gif" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;These are just some examples, of course, there are much more. Just tell yours!!! &lt;/p&gt;</summary><category term="programming"></category><category term="fast"></category><category term="discovery"></category></entry><entry><title>Understand Bitcoin, then do not buy</title><link href="http://jordiburgos.com/post/2013/understand-bitcoin-then-do-not-buy.html" rel="alternate"></link><updated>2013-12-23T21:30:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-23:post/2013/understand-bitcoin-then-do-not-buy.html</id><summary type="html">&lt;h1&gt;What is Bitcoin?&lt;/h1&gt;
+&lt;p&gt;Bitcoin is a new digital currency invented by "Satoshi Nakamoto", it is just a pseudonym. Do not wait to see his picture anywhere, or watch him on the TV.&lt;/p&gt;
+&lt;p&gt;It is a currency accepted on some on-line services and companies, just like USD are used on USA and EUR on Europe.&lt;/p&gt;
+&lt;p&gt;Also there is the belief that it is used on drug traffic, weapon traffic and many other illegal activities.&lt;/p&gt;
+&lt;h1&gt;What is worth?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Nothing&lt;/strong&gt;. Period.&lt;/p&gt;
+&lt;p&gt;Typical currencies, like Dollar or Euro, are backed by a national bank. Long time ago, a banknote was the promise to pay the bearer an amount of gold. Do not try to go to your bank and ask for your gold. Actually, the issuing govern or national bank guarantees the value of the currency.&lt;/p&gt;
+&lt;p&gt;So, what guarantees a Bitcoin? Nothing. It is just a invented currency and its value is determined by the offer and demand.&lt;/p&gt;
+&lt;h1&gt;How to get a Bitcoin&lt;/h1&gt;
+&lt;p&gt;An algorithm keeps your computer working for hours/days/months... just to throw a bunch of numbers as result. If this numbers are "correct" you have a new Bitcoin.&lt;/p&gt;
+&lt;p&gt;As the calculations made on your computer are not used on anything else than creating a Bitcoin, your computer power is wasted.&lt;/p&gt;
+&lt;p&gt;Watching from another point of view, it is like converting electricity into numbers.&lt;/p&gt;
+&lt;h1&gt;Buy, Sell and Price&lt;/h1&gt;
+&lt;p&gt;There are some exchange markets, like real stock markets, where you can buy and sell Bitcoins with real money.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Contact with me to INSERT YOUR AD HERE&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The price is just based on the offer and demand. Also on fashion, as it is becoming quite popular lastly. Look at the graphic bellow, it shows the total values from its beginning.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="All Bitcoin values" src="http://jordiburgos.com/images/bitcoin-all.png" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It started as B1 = $1 on October 2010. On October 2013 raised to $1200, the suddenly went down to $700 in 2 days. 2 more days, $1000. And finally (as I write this words), it costs about $650. Look all sudden fluctuations on last days.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Last month Bitcoin values" src="http://jordiburgos.com/images/bitcoin-1m.png" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The bitcoins are created from "the nothing". They are not backed on gold/guarantees as the usual currencies. They worth just as the willing of the people to buy, sell and exchange.&lt;/p&gt;
+&lt;p&gt;How long it will take to come down to $0.01?&lt;/p&gt;
+&lt;p&gt;My recommendation: &lt;strong&gt;DO NOT BUY&lt;/strong&gt;, at least if you do not want to highly risk your money due to its high volatility.&lt;/p&gt;</summary><category term="economy"></category><category term="bitcoin"></category><category term="opinion"></category></entry><entry><title>Javascrip and HTML online web tools</title><link href="http://jordiburgos.com/post/2013/javascript-html-online-web-tools.html" rel="alternate"></link><updated>2013-12-18T23:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-18:post/2013/javascript-html-online-web-tools.html</id><summary type="html">&lt;style&gt;
+.result {
+    background-color: #F0F0F0;
+}
+.tall {
+    height: 150px !important;
+}
+&lt;/style&gt;
+
+&lt;p&gt;Here are some useful tools for developing, investigating, web scraping... Mainly for &lt;strong&gt;Javascript&lt;/strong&gt; and &lt;strong&gt;HTML&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I'll be adding tools as they are developed, needed or asked. &lt;strong&gt;Use the comments!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;v1: Base64, URL encode, time and date, regular expressions (RegEx), numbers&lt;/li&gt;
+&lt;li&gt;v2: JSON formatter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Encoding/Decoding&lt;/h1&gt;
+&lt;div id="encodedecode"&gt;
+&lt;p&gt;Source text:&lt;br/&gt;&lt;textarea id='text' class="form-control"&gt;Text&lt;/textarea&gt;
+&lt;br/&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-3"&gt;
+Base64 Encode:&lt;br/&gt;&lt;textarea id='base64encode' class="form-control result"&gt;base64encode&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+Base64 Decode:&lt;br/&gt;&lt;textarea id='base64decode' class="form-control result"&gt;base64decode&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+URL encode:&lt;br/&gt;&lt;textarea id='uencode' class="form-control result"&gt;uencode&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+URL decode:&lt;br/&gt;&lt;textarea id='udecode' class="form-control result"&gt;udecode&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Time and Date&lt;/h1&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;div class="row"&gt;
+&lt;div class="col-sm-4"&gt;
+Milliseconds:&lt;br/&gt;&lt;textarea id='millis' class="form-control"&gt;1000000&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Date local timezone:&lt;br/&gt;&lt;textarea id='date' class="form-control result"&gt;1000000&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Date UTC:&lt;br/&gt;&lt;textarea id='date-utc' class="form-control result"&gt;1000000&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Regular expressions&lt;/h1&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;div class="row"&gt;
+&lt;div class="col-sm-4"&gt;
+Source text:&lt;br/&gt;&lt;textarea id='string' class="form-control"&gt;Is this all there is?&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Regular expression:&lt;br/&gt;&lt;textarea id='pattern' class="form-control"&gt;/is/gi&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Replace:&lt;br/&gt;&lt;textarea id='replace' class="form-control"&gt;AAA&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4"&gt;
+Test:&lt;br/&gt;&lt;textarea id='pattern-test' class="form-control result"&gt;test&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Matches:&lt;br/&gt;&lt;textarea id='pattern-match' class="form-control result"&gt;match&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4"&gt;
+Replaced:&lt;br/&gt;&lt;textarea id='pattern-replaced' class="form-control result"&gt;replaced&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;h1&gt;Numbers&lt;/h1&gt;
+&lt;div id="numbers"&gt;
+&lt;p&gt;&lt;div class="row"&gt;
+&lt;div class="col-sm-3"&gt;
+Source number:&lt;br/&gt;&lt;textarea id='number' class="form-control"&gt;10&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+Source base:&lt;br/&gt;
+&lt;select id="base" class="form-control"&gt;
+&lt;option value="2"&gt;2&lt;/option&gt;
+&lt;option value="8"&gt;8&lt;/option&gt;
+&lt;option selected="selected" value="10"&gt;10&lt;/option&gt;
+&lt;option value="16"&gt;16&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-3"&gt;
+binary:&lt;br/&gt;&lt;textarea id='binary' class="form-control result"&gt;999&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+decimal:&lt;br/&gt;&lt;textarea id='decimal' class="form-control result"&gt;999&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+octal:&lt;br/&gt;&lt;textarea id='octal' class="form-control result"&gt;999&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-3"&gt;
+hexadecimal:&lt;br/&gt;&lt;textarea id='hexadecimal' class="form-control result"&gt;999&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;JSON Formatter&lt;/h1&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;div class="row"&gt;
+&lt;div class="col-sm-6"&gt;
+JSON input:&lt;br/&gt;&lt;textarea id='json' class="form-control tall"&gt;{"prop1": 3, "the_array": ["a","b","c"], "prop2": "string"}&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-6"&gt;
+JSON formatted:&lt;br/&gt;&lt;textarea id='jsonresult' class="form-control result tall"&gt;{...}&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;</summary><category term="javascript"></category><category term="web"></category><category term="tools"></category></entry><entry><title>Easy start a Hadoop project with Maven</title><link href="http://jordiburgos.com/post/2013/java-hadoop-maven.html" rel="alternate"></link><updated>2013-12-15T00:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-15:post/2013/java-hadoop-maven.html</id><summary type="html">&lt;p&gt;For running a Hadoop job written in Java, it is needed to create a Jar file with the compiled classes and also include another dependencies of out code. This can be very time consuming if we do not automatise the tasks.&lt;/p&gt;
+&lt;p&gt;When we have the idea and want to start coding instead of thinking on compile, compress the jar file, organize folders, etc... This guide shows how to configure a &lt;a href="http://maven.apache.org/"&gt;Apache Maven&lt;/a&gt; pom.xml file to obtain a single zip with code plus dependencies ready to be executed on a Hadoop environment.&lt;/p&gt;
+&lt;p&gt;Features:
+- Create JAR file with the job classes.
+- Download dependencies.
+- Create a bundle ZIP file.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;You can follow the guide step by step. However if you just want to reuse the resulting pom.xml of this guide, go to the end of the article.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;Start with an empty pom.xml file&lt;/h1&gt;
+&lt;p&gt;Let's start with a simple pom.xml. &lt;strong&gt;archetype:generate&lt;/strong&gt; can make the work for us to start the configuration. It creates the folde structure and a pom.xml with the minimum data required. Change &lt;strong&gt;groupId&lt;/strong&gt; and &lt;strong&gt;artifactId&lt;/strong&gt; with your requirements.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mvn archetype:generate -DgroupId&lt;span class="o"&gt;=&lt;/span&gt;com.jordiburgos -DartifactId&lt;span class="o"&gt;=&lt;/span&gt;wordcount -DarchetypeArtifactId&lt;span class="o"&gt;=&lt;/span&gt;maven-archetype-quickstart -DinteractiveMode&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Add Hadoop dependencies&lt;/h1&gt;
+&lt;p&gt;Hadoop dependencies can be download from Cloudera repositories.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;repositories&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;repository&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;id&amp;gt;&lt;/span&gt;cloudera&lt;span class="nt"&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&lt;/span&gt;https://repository.cloudera.com/artifactory/cloudera-repos/&lt;span class="nt"&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/repository&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/repositories&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add the dependencies. org.apache.hadoop:&lt;strong&gt;hadoop-common&lt;/strong&gt; and org.apache.hadoop:&lt;strong&gt;hadoop-core&lt;/strong&gt;. Version numbers can vary, 2.2.0 and 1.2.1 are the current ones. Also jdk.tools are needed, note that systemPath is used to locate tools.jar, it comes with your JDK installation.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;dependencies&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.apache.hadoop&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;hadoop-common&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.2.0&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.apache.hadoop&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;hadoop-core&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.2.1&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;jdk.tools&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;jdk.tools&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.7&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;system&lt;span class="nt"&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;systemPath&amp;gt;&lt;/span&gt;${java.home}/../lib/tools.jar&lt;span class="nt"&gt;&amp;lt;/systemPath&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+    [...]
+&lt;span class="nt"&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Create a ZIP bundle&lt;/h1&gt;
+&lt;p&gt;Using &lt;strong&gt;maven-assembly-plugin&lt;/strong&gt; the ZIP file is created. It includes all dependencies in the &lt;em&gt;/lib/&lt;/em&gt; folder and the project jar on the root folder. ZIP structure is defined on &lt;strong&gt;assembly.xml&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[...]
+&lt;span class="nt"&gt;&amp;lt;fileSets&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;fileSet&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;directory&amp;gt;&lt;/span&gt;${project.build.directory}&lt;span class="nt"&gt;&amp;lt;/directory&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;outputDirectory&amp;gt;&lt;/span&gt;/&lt;span class="nt"&gt;&amp;lt;/outputDirectory&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;includes&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;include&amp;gt;&lt;/span&gt;*.jar&lt;span class="nt"&gt;&amp;lt;/include&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/includes&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/fileSet&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/fileSets&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;dependencySets&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;dependencySet&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;useProjectArtifact&amp;gt;&lt;/span&gt;false&lt;span class="nt"&gt;&amp;lt;/useProjectArtifact&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;outputDirectory&amp;gt;&lt;/span&gt;/lib&lt;span class="nt"&gt;&amp;lt;/outputDirectory&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/dependencySet&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/dependencySets&amp;gt;&lt;/span&gt;
+[...]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;After implementing the pom.xml, all the deployment of the Hadoop job is automatized. We only need to focus on code now.&lt;/p&gt;
+&lt;p&gt;It is not needed to follow the steps for starting a new development. Just download the code from &lt;a href="https://github.com/jmaister/wordcount"&gt;WordCount&lt;/a&gt; on my GitHub account. Adapt it to your needs and start Hadooping.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Elephant kick" src="http://jordiburgos.com/images/elephant-ball.gif" /&gt;&lt;/p&gt;
+&lt;/div&gt;</summary><category term="java"></category><category term="hadoop"></category><category term="maven"></category></entry><entry><title>Big Data: Hadoop on a virtual machine, for the poor and lazy</title><link href="http://jordiburgos.com/post/2013/big-data-hadoop-virtual-machine-poor-lazy.html" rel="alternate"></link><updated>2013-12-10T22:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-10:post/2013/big-data-hadoop-virtual-machine-poor-lazy.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;You can check the first article of this series: &lt;a href="./big-data-get-data.html"&gt;Big Data: Get the data&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After having the data, next step is to have a Hadoop cluster or single machine installation to "upload" the data and run the processes.&lt;/p&gt;
+&lt;p&gt;Even that Hadoop is meant to run on lots and lots of machines at the same time, we can make a single &lt;strong&gt;virtual machine&lt;/strong&gt; installation to run tests and start hacking with it.&lt;/p&gt;
+&lt;p&gt;If the purpose of your Hadoop learning is just for programming and not be a full system administrator, this is a good way to start.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no need to buy and build several machines&lt;/li&gt;
+&lt;li&gt;All inside your own machine&lt;/li&gt;
+&lt;li&gt;Running in minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slower than a real cluster&lt;/li&gt;
+&lt;li&gt;Just for testing purposes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Create the Virtual Machine&lt;/h1&gt;
+&lt;p&gt;The company &lt;a href="http://hortonworks.com/"&gt;Hortonworks&lt;/a&gt; provides the &lt;a href="http://hortonworks.com/products/hortonworks-sandbox/"&gt;Hortonworks Sandbox&lt;/a&gt;, a Virtual Machine image with a full Hadoop environment. It saves us the time and pain of installing and configuring the machine.&lt;/p&gt;
+&lt;p&gt;It comes out of the box with Hadoop, HBase, ZooKeeper, Hive, etc. Just take a look at the sandbox page to see all the details.&lt;/p&gt;
+&lt;p&gt;Step 1: Install &lt;a href="https://www.virtualbox.org/wiki/Downloads"&gt;VirtalBox&lt;/a&gt; 4.2+
+Step 2: Download the &lt;a href="http://hortonworks.com/products/hortonworks-sandbox/#install"&gt;Sandbox 2 for Virtualbox (2.5 GB)&lt;/a&gt;
+Step 3: Install the &lt;strong&gt;.ova&lt;/strong&gt; image downloaded on VirtualBox and follow the instructions.
+Step 4: Run!!!&lt;/p&gt;
+&lt;p&gt;Just wait to full start of the machine and you will get a screen with the instructions. It lets you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter the web interface on &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt; (Asks for registration). It gives you tutorials and tool preferences.&lt;/li&gt;
+&lt;li&gt;SSH the server with &lt;strong&gt;ssh root@127.0.0.1 -p 2222&lt;/strong&gt;, the password is "hadoop".&lt;/li&gt;
+&lt;li&gt;Change to another console inside the virtual machine with Alt+F5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Hortonworks Sandbox running" src="http://jordiburgos.com/images/HortonworksSandbox20.png" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Start hacking with Hadoop&lt;/h1&gt;
+&lt;p&gt;For testing that it works, let's run a little test using Hadoop.&lt;/p&gt;
+&lt;h2&gt;Upload data to HDFS&lt;/h2&gt;
+&lt;p&gt;To allow access to the data into Hadoop environment, we use HDFS (Hadoop Distributed File System). It holds and manages the files and allows access to the processes. In a multi-server environment, HDFS would replicate and share data between several machines.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Some command are run from the client and other are run inside the VM.&lt;/p&gt;
+&lt;p&gt;The user to log and access by ssh is &lt;strong&gt;hue&lt;/strong&gt;, the default user for the web interface.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Create the 'boe' folder: this folder will hold the input data to our job.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;hue&lt;/span&gt;&lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;2222&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hdfs dfs -mkdir boe&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Upload BOE-A-2013-1 file to boe/BOE-A-2013-1 file on HDFS. The cat command avoids to upload the file to the VM and then to the HDFS.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;cat&lt;/span&gt; &lt;span class="n"&gt;BOE&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;hue&lt;/span&gt;&lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;2222&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hdfs dfs -put - boe/BOE-A-2013-1&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It is possible to check the results on the web interface &lt;a href="http://127.0.0.1:8000/filebrowser/"&gt;http://127.0.0.1:8000/filebrowser/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Run a test map/reduce job&lt;/h2&gt;
+&lt;p&gt;Log on the VM and download the wordcount.jar, it contains the java classes to run the job.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;hue&lt;/span&gt;&lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;2222&lt;/span&gt;
+
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;hue&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;sandbox&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/jmaister/wordcount/blob/master/wordcount.jar?raw=true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Execute the JAR with hadoop.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[hue@sandbox ~]$ hadoop jar wordcount.jar com.jordiburgos.WordCount boe wordcountout
+...
+... INFO mapreduce.Job: The url to track the job: ...:8088/proxy/application_1386615892390_0013/
+... INFO mapreduce.Job: Running job: job_1386615892390_0013
+... INFO mapreduce.Job: Job job_1386615892390_0013 running in uber mode : false
+... INFO mapreduce.Job:  map 0% reduce 0%
+... INFO mapreduce.Job:  map 100% reduce 0%
+... INFO mapreduce.Job:  map 100% reduce 100%
+... INFO mapreduce.Job: Job job_1386615892390_0013 completed successfully
+... INFO mapreduce.Job: Counters: 43
+        File System Counters...
+        Job Counters...
+        Map-Reduce Framework...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now that the job has ended, the results are available con the &lt;em&gt;wordcountout&lt;/em&gt; HFDS folder. There are two options to see the results. &lt;a href="http://127.0.0.1:8000/filebrowser/"&gt;http://127.0.0.1:8000/filebrowser/&lt;/a&gt; or using and HDFS command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[hue@sandbox ~]$ hdfs dfs -cat &amp;quot;wordcountout/part-r-00000&amp;quot;
+CONFORMIDAD     1
+ESS/1/2012,     4
+ESS/2825/2012,  1
+El      1
+Empleo  4
+Laboral 1
+Ley     3
+Ministerio      2
+Ministra        1
+Oficial 2
+Orden   5
+Seguridad       4
+Social  1
+...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The result is a file with the words and the number of occurrences. Quite easy and fast with any programming language, but this is juast a test.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;single node hadoop&lt;/strong&gt; is now up and running and we can send jobs to be executed.&lt;/p&gt;
+&lt;p&gt;On next articles of the series, a better example of a MapReduce implementation will be done. To read and process all the XML files from the first article: &lt;a href="./big-data-get-data.html"&gt;Big Data: Get the data&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, there will be room for another article how to automatically build the JAR for running the Hadoop job.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Not bad" src="http://jordiburgos.com/images/meme/not_bad.jpg" /&gt;&lt;/p&gt;
+&lt;/div&gt;</summary><category term="big data"></category><category term="hadoop"></category><category term="virtualization"></category><category term="mapreduce"></category></entry><entry><title>Better SEO for your blog</title><link href="http://jordiburgos.com/post/2013/better-seo-pelican-blog.html" rel="alternate"></link><updated>2013-12-08T02:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-08:post/2013/better-seo-pelican-blog.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Check the creation of the theme on &lt;a href="create-pelican-theme-bootstrap.html"&gt;Creating a Pelican theme with Bootstrap&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For having a better exposure of our blog (or any page) on Internet, one of the important things is to have a good position on search results.&lt;/p&gt;
+&lt;p&gt;The techniques used to achieve this are called &lt;strong&gt;SEO&lt;/strong&gt;, &lt;em&gt;Search Engine Optimization&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Here I will show you two techniques that I used on this blog and, by extension, on my Pelican theme, &lt;a href="https://github.com/jmaister/jmtheme"&gt;jmtheme&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Pelican theme with better SEO&lt;/h1&gt;
+&lt;p&gt;Adding some information about your blog can be done automatically from the Pelican theme. It helps the indexer bots to know what is in your pages.&lt;/p&gt;
+&lt;h2&gt;Pagemaps&lt;/h2&gt;
+&lt;p&gt;PageMaps is a structured data format that Google created to enable website creators to embed data and notes in their pages.&lt;/p&gt;
+&lt;p&gt;It is an XML structure inserted in the HEAD tag of the HTML page as a comment, between &amp;lt;!-- ... --&amp;gt;.&lt;/p&gt;
+&lt;p&gt;Here is a sample of the code used on the theme, full code on &lt;a href="https://github.com/jmaister/jmtheme/blob/master/templates/seo_pagemap.html"&gt;seo_pagemap.html&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    ....
+&lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;PageMap&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;DataObject type=&amp;quot;document&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;    &amp;lt;Attribute name=&amp;quot;title&amp;quot;&amp;gt;{{article.title|striptags}}&amp;lt;/Attribute&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;    &amp;lt;Attribute name=&amp;quot;author&amp;quot;&amp;gt;{{ article.author }}&amp;lt;/Attribute&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;    &amp;lt;Attribute name=&amp;quot;description&amp;quot;&amp;gt;{{ article.summary|striptags }}&amp;lt;/Attribute&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;    &amp;lt;Attribute name=&amp;quot;last_update&amp;quot;&amp;gt;{{ article.date.isoformat() }}&amp;lt;/Attribute&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;/DataObject&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;/PageMap&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;--&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here is the sample for a &lt;strong&gt;document&lt;/strong&gt; information. There are more types like publication, action or thumbnail.&lt;/p&gt;
+&lt;h2&gt;Microformats&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Microformat"&gt;Microformats&lt;/a&gt; are semantic markup formats for (X)HTML pages that help make the content accessible for search robots. Microformats allow the webmaster to indicate the meaning of specific fragments of text explicitly by supplementing existing HTML markup with special blocks of code. &lt;/p&gt;
+&lt;p&gt;There are several types of microformats to tag contacts, recipes, reviews, products, etc.&lt;/p&gt;
+&lt;p&gt;Sample of hCard, the markup format for a contact. In this example, it is used to tag the author of an article. Using &lt;strong&gt;vcard&lt;/strong&gt; on the class of the main tag and &lt;strong&gt;name&lt;/strong&gt;, &lt;strong&gt;fn&lt;/strong&gt;, &lt;strong&gt;photo&lt;/strong&gt;, etc... on the child tags.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;By &lt;span class="nt"&gt;&amp;lt;span&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- SEO: vcard --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;address&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hcard-Jordi-Burgos&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;vcard author&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;name&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://jordiburgos.com/author/jordi-burgos.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Jordi Burgos&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fn&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://jordiburgos.com/author/jordi-burgos.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Jordi Burgos&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://jordiburgos.com/images/gravatar300.jpeg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;photo of &amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;photo&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Software Engineer&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;org&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;jordiburgos.com&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;url&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://jordiburgos.com&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;jordiburgos.com&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;email&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mailto:jordiburgos@gmail.com&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;jordiburgos@gmail.com&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;address&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;region&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Valencia&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;country-name&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Spain&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/address&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Maybe this is much information and we just want to show the name, and let the spiders to catch all the data. We can use CSS to hide data that is not important for the user on that part of the page.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.vcard&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.vcard&lt;/span&gt; &lt;span class="nc"&gt;.name&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Show your picture on the search results&lt;/h1&gt;
+&lt;p&gt;Ever seen some people faces on the search results?&lt;/p&gt;
+&lt;p&gt;I you want your faces close to the search results of your pages, you need to link your Google+ account with your pages.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Add a link on your pages to your Google+ account with the "rel=author":&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://plus.google.com/105036003303074734569?rel=author&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Google+&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Add you as a contributor to your Google+ account. Go to https://plus.google.com/&amp;lt;your-id&amp;gt;/about and add on "Contributes to"&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Photo on search results" src="http://jordiburgos.com/images/seo/results_photo.png" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;With this easy configuration to add your picture and adding a little more information inside your pages, it is possible to have better positioning and visibility on search results.&lt;/p&gt;
+&lt;p&gt;These are just some examples of what can be done. There are much more tips and tricks waiting to be used. Stay tuned!&lt;/p&gt;</summary><category term="seo"></category><category term="google"></category><category term="blog"></category><category term="pelican"></category></entry><entry><title>Hadoop cluster with Vagrant</title><link href="http://jordiburgos.com/post/2013/big-data-hadoop-cluster-vagrant.html" rel="alternate"></link><updated>2013-12-06T22:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-06:post/2013/big-data-hadoop-cluster-vagrant.html</id><summary type="html">&lt;p&gt;After having the data, next step is to have a Hadoop cluster to "upload" the data and run the processes.&lt;/p&gt;
+&lt;p&gt;This cluster is for the poor and lazy because it is group of virtualized machines running Hadoop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no need to buy and build several machines&lt;/li&gt;
+&lt;li&gt;All inside your own machine&lt;/li&gt;
+&lt;li&gt;Running in minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slower than a real cluster&lt;/li&gt;
+&lt;li&gt;Just for testing purposes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Building virtual machines with Vagrant&lt;/h1&gt;
+&lt;p&gt;As its site says: &lt;em&gt;"Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team."&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr&lt;/strong&gt;: Vagrant creates virtual machines using configuration files. It is possible to start, stop, create, destroy virtual machines easily.&lt;/p&gt;
+&lt;p&gt;And here is the magic recipe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href="https://www.virtualbox.org/wiki/Downloads"&gt;VirtualBox&lt;/a&gt; for the virtual machines.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href="http://downloads.vagrantup.com/"&gt;Vagrant&lt;/a&gt; for create, start and stop.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prepare the configuration files:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git clone &lt;a href="https://github.com/jmaister/vagrant-hadoop-cluster"&gt;https://github.com/jmaister/vagrant-hadoop-cluster&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;cd vagrant-hadoop-cluster&lt;/p&gt;
+&lt;p&gt;vagrant box add precise64 http://files.vagrantup.com/precise64.box&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the machines!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vagrant up --provider=virtualbox&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="big data"></category><category term="hadoop"></category><category term="virtualization"></category><category term="vagrant"></category></entry><entry><title>Big Data: Get the data</title><link href="http://jordiburgos.com/post/2013/big-data-get-data.html" rel="alternate"></link><updated>2013-12-02T20:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-12-02:post/2013/big-data-get-data.html</id><summary type="html">&lt;p&gt;Lastly, there is a lot of news, work offers, noise, ads, ... about &lt;strong&gt;Big Data&lt;/strong&gt;. Because of this I decided to make my own Big Data project.&lt;/p&gt;
+&lt;p&gt;As this just would be to implement a map-reduce algorithm in any language, quite easy for any programming exercise, I wanted to give this technology an use for something real.&lt;/p&gt;
+&lt;h1&gt;The data&lt;/h1&gt;
+&lt;p&gt;Any Big Data project is nothing without the data. Otherwise, it would be called &lt;strong&gt;small data&lt;/strong&gt; or   &lt;strong&gt;medium data&lt;/strong&gt; (by the way, I should register this new trademarks).&lt;/p&gt;
+&lt;p&gt;The data to be processed is the files of the &lt;a href="http://www.boe.es"&gt;BOE&lt;/a&gt;. The &lt;strong&gt;Bolet&amp;iacute;n Oficial del Estado&lt;/strong&gt; (BOE) is a daily Spanish-government publication in which new laws, directives and executive decisions are published together with advertisements for public-sector posts and contracts. It is provided free of charge to all government agencies and state organizations including schools, embassies and public libraries. (Collins Spanish Dictionary)&lt;/p&gt;
+&lt;h1&gt;Get the data&lt;/h1&gt;
+&lt;p&gt;For scrapping the data from the website, first approach is always to use Python tools like &lt;a href="http://scrapy.org/"&gt;Scrapy&lt;/a&gt; or &lt;a href="http://docs.webscraping.com/index.html"&gt;webscraping&lt;/a&gt;. I used these tools some times before and make very easy to crawl a full website looking for information. But after some research of the pages, it would be very over-engineered to use these tools.&lt;/p&gt;
+&lt;p&gt;All the files follow the same pattern:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Format: &lt;em&gt;xml&lt;/em&gt; for marked documents; &lt;em&gt;txt&lt;/em&gt; for plain text.&lt;/li&gt;
+&lt;li&gt;Code: &lt;em&gt;A&lt;/em&gt; for general orders, personnel and misc; &lt;em&gt;B&lt;/em&gt; for Justice administration.&lt;/li&gt;
+&lt;li&gt;Year&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ID: from &lt;em&gt;1&lt;/em&gt; to the &lt;em&gt;number of documents&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;http://www.boe.es/diario_boe/[format].php?id=BOE-[code]-[year]-[id]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For starting, I downloaded the files for years 2012 and 2013. 182694 files with 1,67 GB (1.800.364.500 bytes).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="sd"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="sd"&gt;Scrapping BOE (boe.es) bulletins.&lt;/span&gt;
+
+&lt;span class="sd"&gt;Created on 30/11/2013&lt;/span&gt;
+&lt;span class="sd"&gt;@author: Jordi Burgos&lt;/span&gt;
+&lt;span class="sd"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;span class="c"&gt;# pip install webscraping&lt;/span&gt;
+&lt;span class="c"&gt;# http://docs.webscraping.com/examples.html#business-directory-threaded-scraper&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;webscraping&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;download&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xpath&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;itertools&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;urlparse&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;urllib2&lt;/span&gt;
+
+&lt;span class="n"&gt;DOMAIN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;http://www.boe.es&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;BOE_LINK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;/diario_boe/xml.php?id=&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;FILENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;BOE-&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;-&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;-&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;OUTPUT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;files/&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;MAX_IDS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;12536&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;45197&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;15822&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;45222&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;    
+    &lt;span class="mi"&gt;2011&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;20867&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;B&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;43026&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;    
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;max_codes&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;MAX_IDS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;max_id&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;max_codes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;max_id&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="n"&gt;fullid&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FILENAME&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+                &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullid&lt;/span&gt;
+                &lt;span class="n"&gt;link&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;urlparse&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urljoin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DOMAIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;BOE_LINK&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fullid&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+                &lt;span class="n"&gt;save_url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;save_url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exists&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;pass&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;urllib2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;After getting the data, on next articles I will set up a Hadoop environment for programming and analyse the data.&lt;/p&gt;</summary><category term="big data"></category><category term="small data"></category><category term="hadoop"></category></entry><entry><title>Creating a Pelican theme with Bootstrap</title><link href="http://jordiburgos.com/post/2013/create-pelican-theme-bootstrap.html" rel="alternate"></link><updated>2013-11-28T23:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-11-28:post/2013/create-pelican-theme-bootstrap.html</id><summary type="html">&lt;p&gt;I wanted to give the blog my personal touch by creating my own theme for &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. Here is the &lt;a href="https://github.com/getpelican/pelican/blob/master/docs/getting_started.rst"&gt;getting started page&lt;/a&gt; for creating your own blog with this tool.&lt;/p&gt;
+&lt;p&gt;It is quite simple to setup and just start writing articles and pages with &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).  &lt;/p&gt;
+&lt;p&gt;There are a lot of good and nice themes, but I prefered to create/copy/inspire this by myself to meet my requirements. However, it follows the typical template rules to be useful for anyone to use it.&lt;/p&gt;
+&lt;p&gt;I called it jmtheme and you can download it form here &lt;a href="https://github.com/jmaister/jmtheme"&gt;jmtheme&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Theme" src="http://jordiburgos.com/images/theme_thumb.png" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive theme: works well on desktops, tablets and mobiles&lt;/li&gt;
+&lt;li&gt;Social icons&lt;/li&gt;
+&lt;li&gt;Social share buttons (twitter, google+, facebook, reddit)&lt;/li&gt;
+&lt;li&gt;Disqus comments&lt;/li&gt;
+&lt;li&gt;Google Analytics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Personalization&lt;/h1&gt;
+&lt;p&gt;Option to add a list of icons pointing to the common social sites. Also the email icon.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Social widget&lt;/span&gt;
+&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;twitter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://twitter.com/XXXXXX&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;github&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://github.com/XXXXXX&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;EMAIL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;user@example.com&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Social buttons on each article for sharing. Just add value to this variables.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;GITHUB_USERNAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;jmaister&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;TWITTER_USERNAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;jordimaister&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;FACEBOOK_APPID&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;999......999&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Disqus comments:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;DISQUS_SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;jordiburgos&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Google analytics:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;GOOGLE_ANALYTICS_CODE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;UA-9999999-1&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GOOGLE_ANALYTICS_NAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;jordiburgos.com&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Icons for pages to show on the menu. Add "icon" value on the page.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;icon&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;trophy&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;I am thinking about adding some &lt;a href="http://en.wikipedia.org/wiki/Microdata_%28HTML%29"&gt;microdata&lt;/a&gt; or &lt;a href="http://en.wikipedia.org/wiki/Microformat"&gt;microformat&lt;/a&gt; on the templates to help search engines to crawl and index the site. This is called Search Engine Optimization or SEO. More on this implementation on next articles.&lt;/p&gt;
+&lt;p&gt;If you have any advise or comment about the theme, just tell me on the comments. &lt;/p&gt;</summary><category term="javascript"></category><category term="css"></category><category term="bootstrap"></category><category term="pelican"></category><category term="blog"></category><category term="seo"></category></entry><entry><title>Javascript export to Excel</title><link href="http://jordiburgos.com/post/2013/javascript-export-to-excel.html" rel="alternate"></link><updated>2013-11-26T01:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-11-26:post/2013/javascript-export-to-excel.html</id><summary type="html">&lt;div class="alert alert-info"&gt;
+&lt;p&gt;Check the updated article on: &lt;a href="http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html"&gt;ExcellentExport.js update&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Raise the hand those who never have been asked to add an &lt;strong&gt;Export to Excel&lt;/strong&gt; on any application. For clients, it seems that all your work is just nothing if this omnipresent feature is not there (with the little icon obviously).&lt;/p&gt;
+&lt;p&gt;As Microsoft introduced the &lt;strong&gt;Office Open XML (OOXML)&lt;/strong&gt; format with Microsoft Office 2007 it became the default format of Microsoft Excel. Those files are just a bunch of XML files inside a ZIP archive. &lt;strong&gt;Note: Do not confuse OOXML with OpenDocument from &lt;a href="http://www.openoffice.org"&gt;OpenOffice.org&lt;/a&gt;&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;This can be achieved with Javascript and the &lt;a href="http://en.wikipedia.org/wiki/Data_URI_scheme"&gt;data: URL&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Solution&lt;/h1&gt;
+&lt;p&gt;The data URI provides a way to include data in-line in web pages as if they were external resources. The syntax on the &lt;strong&gt;href&lt;/strong&gt; is:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;MIME&lt;/span&gt;&lt;span class="na"&gt;-type&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;][&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;charset&lt;/span&gt;&lt;span class="o"&gt;=&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;][&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nb"&gt;base64&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;,&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;data&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Check this sample link that includes an image is embedded on the &lt;strong&gt;href&lt;/strong&gt; encoded with Base64 as &lt;strong&gt;data:image/jpeg;base64,&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="data:image/jpeg;base64,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" target="_blank"&gt;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA....Diln2CJ//9k=&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So cool right? :)&lt;/p&gt;
+&lt;p&gt;Let's make the export to Excel from an HTML table. The Excel 2007 file can be created on the fly. Here is the table:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;datatable&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;100&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;200&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;300&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;400&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;500&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;600&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And here is the code of the Javascript import from my github account &lt;a href="https://github.com/jmaister/excellentexport"&gt;ExcellentExport.js&lt;/a&gt; and the code for the link. Check the &lt;strong&gt;onclick&lt;/strong&gt; and &lt;strong&gt;download&lt;/strong&gt; parameters.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;excellentexport.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;download=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;somedata.xls&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;onclick=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;return ExcellentExport.excel(this, &amp;#39;datatable&amp;#39;, &amp;#39;Sheet Name Here&amp;#39;);&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        Export table to Excel&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Working example&lt;/h1&gt;
+&lt;table class="table table-bordered" id="datatable" style="border: 1px solid black"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;100&lt;/td&gt;
+        &lt;td&gt;200&lt;/td&gt;
+        &lt;td&gt;300&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;400&lt;/td&gt;
+        &lt;td&gt;500&lt;/td&gt;
+        &lt;td&gt;600&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;script src="/js/excellentexport.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');"&gt;Export table to Excel&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The data URL scheme gives endless possibilities to create files from the browser: images, ZIP files, CSV data, ...&lt;/p&gt;
+&lt;p&gt;I'll be completing the functionality of &lt;a href="https://github.com/jmaister/excellentexport"&gt;ExcellentExport.js&lt;/a&gt; library to add more features. Actually I just tested it on Firefox 25.0 and Chrome 31.0.&lt;/p&gt;
+&lt;p&gt;Check on github or this blog for updates.&lt;/p&gt;</summary><category term="javascript"></category><category term="export"></category><category term="excel"></category><category term="project"></category></entry><entry><title>Download all project dependencies to a folder with Maven</title><link href="http://jordiburgos.com/post/2013/maven-download-dependencies-folder.html" rel="alternate"></link><updated>2013-11-21T20:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-11-21:post/2013/maven-download-dependencies-folder.html</id><summary type="html">&lt;p&gt;Some days ago at work I had a new requirement, upload all our deliverable packages (*.jar, *.war) to a new service for a security analysis.&lt;/p&gt;
+&lt;p&gt;The first solution was to upload artifact after its build on the continuous integration server. However this was not a good solution as all the artifacts must be uploaded at the same time.&lt;/p&gt;
+&lt;p&gt;After some research I've found the &lt;a href="http://maven.apache.org/plugins/maven-dependency-plugin/"&gt;maven-dependency-plugin&lt;/a&gt;. A very helpful plugin to manage all the dependencies defined in a pom.xml.&lt;/p&gt;
+&lt;p&gt;It has lots of options but the one useful for this task is &lt;strong&gt;copy-dependencies&lt;/strong&gt;. It downloads all the dependencies defined on a project to a folder.&lt;/p&gt;
+&lt;p&gt;Here is the resulting pom.xml that would place the artifacts on the &lt;strong&gt;${project.build.directory}/dependency&lt;/strong&gt; by default. See the comments below in the code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;project&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;xmlns:xsi=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&lt;/span&gt;
+    &lt;span class="na"&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;modelVersion&amp;gt;&lt;/span&gt;4.0.0&lt;span class="nt"&gt;&amp;lt;/modelVersion&amp;gt;&lt;/span&gt;
+
+    &lt;span class="c"&gt;&amp;lt;!-- Define repositories --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;parent&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.test&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;base&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/parent&amp;gt;&lt;/span&gt;
+
+    &lt;span class="c"&gt;&amp;lt;!-- Define identification of this artifact --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.test&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;download-artifacts&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;packaging&amp;gt;&lt;/span&gt;pom&lt;span class="nt"&gt;&amp;lt;/packaging&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;project.build.sourceEncoding&amp;gt;&lt;/span&gt;UTF-8&lt;span class="nt"&gt;&amp;lt;/project.build.sourceEncoding&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
+
+    &lt;span class="c"&gt;&amp;lt;!-- Dependencies to be downloaded, RELEASES or SNAPSHOTS --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;dependencies&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.test&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;goodproject&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;type&amp;gt;&lt;/span&gt;jar&lt;span class="nt"&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.test&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;webproject&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;5.0&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;type&amp;gt;&lt;/span&gt;war&lt;span class="nt"&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.test&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;application&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.1-SNAPSHOT&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;type&amp;gt;&lt;/span&gt;war&lt;span class="nt"&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+                &lt;span class="c"&gt;&amp;lt;!-- Our helpful plugin --&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class="nt"&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;maven-dependency-plugin&lt;span class="nt"&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.8&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;executions&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;execution&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;id&amp;gt;&lt;/span&gt;copy&lt;span class="nt"&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;phase&amp;gt;&lt;/span&gt;package&lt;span class="nt"&gt;&amp;lt;/phase&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;goals&amp;gt;&lt;/span&gt;
+                            &lt;span class="nt"&gt;&amp;lt;goal&amp;gt;&lt;/span&gt;copy-dependencies&lt;span class="nt"&gt;&amp;lt;/goal&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;/goals&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+                            &lt;span class="c"&gt;&amp;lt;!-- Remove classfier and version from the target files. --&amp;gt;&lt;/span&gt;
+                            &lt;span class="nt"&gt;&amp;lt;stripClassifier&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/stripClassifier&amp;gt;&lt;/span&gt;
+                            &lt;span class="nt"&gt;&amp;lt;stripVersion&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/stripVersion&amp;gt;&lt;/span&gt;
+                        &lt;span class="nt"&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;/execution&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;/executions&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/project&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;By executing &lt;strong&gt;mvn package&lt;/strong&gt; on the pom.xml folder, we would have the files on the destination folder (./target/dependency/):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;goodproject.jar&lt;/li&gt;
+&lt;li&gt;webproject.war&lt;/li&gt;
+&lt;li&gt;application.war&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After giving this solution, I had a great ovation from the team.&lt;/p&gt;
+&lt;div class="center"&gt;
+&lt;p&gt;&lt;img alt="Citizen Kane applause" src="http://jordiburgos.com/images/meme/citizenkane.gif" /&gt;&lt;/p&gt;
+&lt;/div&gt;</summary><category term="tip"></category><category term="maven"></category></entry><entry><title>Hello World!</title><link href="http://jordiburgos.com/post/2013/hello-world.html" rel="alternate"></link><updated>2013-11-20T20:00:00+01:00</updated><author><name>Jordi Burgos</name></author><id>tag:jordiburgos.com,2013-11-20:post/2013/hello-world.html</id><summary type="html">&lt;p&gt;Hello World !!&lt;/p&gt;
+&lt;p&gt;This is my first post.&lt;/p&gt;
+&lt;p&gt;On this blog, I will be writing about my work, programming experiments and personal projects.&lt;/p&gt;</summary><category term="blog"></category></entry></feed>

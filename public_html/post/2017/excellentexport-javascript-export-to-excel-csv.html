@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jordi Burgos - ExcellentExport.js update: Javascript export to Excel and CSV</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jordi Burgos. Programming, technology and random things..">
+
+        <!--Add SEO pagemap-->
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+<DataObject type="document">
+    <Attribute name="title">ExcellentExport.js update: Javascript export to Excel and CSV</Attribute>
+    <Attribute name="author">Jordi Burgos</Attribute>
+    <Attribute name="description">The ExcellentExport.js library is having a lot of visits, from people coming directly to the page orredirected by search engines. So, I decided to update it.</Attribute>
+    <Attribute name="page_count">1</Attribute>
+    <Attribute name="rating">5</Attribute>
+    <Attribute name="last_update">2017-09-26T23:00:00+02:00</Attribute>
+</DataObject>
+<DataObject type="metatags">
+    <Attribute name="category" value="Programming"/>
+        <Attribute name="category" value="javascript"/>
+        <Attribute name="category" value="export"/>
+        <Attribute name="category" value="excel"/>
+        <Attribute name="category" value="project"/>
+</DataObject>
+
+<DataObject type="thumbnail">
+<Attribute name="src" value="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+<Attribute name="width" value="300" />
+<Attribute name="height" value="300" />
+</DataObject>
+</PageMap>
+
+-->    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="jordimaister" />
+    <meta name="twitter:image" content="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+        <meta name="twitter:title" content="ExcellentExport.js update: Javascript export to Excel and CSV" />
+        <meta name="twitter:description" content="Article: ExcellentExport.js update: Javascript export to Excel and CSV" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css">
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="/theme/foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="/theme/css/pygments.css">
+
+        <link rel="stylesheet" href="/theme/css/blog.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+            <!-- SEO: g+ -->
+            <link rel="author" href="https://plus.google.com/105036003303074734569"/>
+
+
+
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a class="navbar-brand" href="/">Jordi Burgos</a></h1>
+                <h2 class="brand-tagline">Programming, technology and random things.</h2>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="pure-button" href="/">Blog</a>
+                        </li>
+
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/cv.html">CV</a>
+                            </li>
+
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/archives.html">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/tags.html">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+<section class="post">
+    <header class="post-header">
+        <img alt="Jordi Burgos's avatar" class="post-avatar" src="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" height="48" width="48">
+        <h2 class="post-title">ExcellentExport.js update: Javascript export to Excel and CSV</h2>
+
+        <p class="post-meta">
+By <a href="/author/jordi-burgos.html" class="author post-author" rel="author">Jordi Burgos</a>
+<span>
+ on <abbr class="published dt-published" title="2017-09-26T23:00:00+02:00"> 26 sep 2017 </abbr>
+</span>
+category
+<a class="post-category post-category-Programming p-category" href="/category/programming.html" rel="tag">Programming</a>
+tags
+    <a class="post-category post-category-excel p-category" href="/tag/excel.html" rel="tag">excel</a>
+    <a class="post-category post-category-export p-category" href="/tag/export.html" rel="tag">export</a>
+    <a class="post-category post-category-javascript p-category" href="/tag/javascript.html" rel="tag">javascript</a>
+    <a class="post-category post-category-project p-category" href="/tag/project.html" rel="tag">project</a>
+<div class="readtime">
+    Read in 3 min.</b>
+</div>
+        </p>
+    </header>
+
+    <div class="post-description">
+        <div class="alert alert-info">
+<p>Check the previous article for more information on: <a href="http://jordiburgos.com/post/2013/javascript-export-to-excel.html">Javascript export to Excel</a></p>
+</div>
+<div class="alert alert-info">
+<p>Updated to v3.3.0</p>
+</div>
+<p>The <a href="https://github.com/jmaister/excellentexport">ExcellentExport</a> library is having a lot of visits, from people coming directly to the page or
+redirected by search engines. So, I decided to update it.</p>
+<p>I have got some ideas from comments on the blog or discussions on reddit.</p>
+<p>Download the new version from: <a href="https://github.com/jmaister/excellentexport/releases/tag/3.3.0">ExcellentExport.js v3.3.0</a></p>
+<h1>Revision history:</h1>
+<h3>3.3.0</h3>
+<ul>
+<li>Remove columns by index</li>
+<li>Filter rows by value</li>
+<li>Updated build to Webpack 4.x.x</li>
+</ul>
+<h3>3.2.1</h3>
+<ul>
+<li>Update npm dependencies to fix vulnerabilities</li>
+</ul>
+<h3>3.2.0</h3>
+<ul>
+<li>Update npm dependencies to fix vulnerabilities</li>
+</ul>
+<h3>3.1.0</h3>
+<ul>
+<li>Fix old API for base64 and escaping problem.</li>
+</ul>
+<h3>3.0.0</h3>
+<ul>
+<li>XLSX support. This bumps the build size to 640 KB.</li>
+<li>New API: ExcellentExport.convert(...)</li>
+<li>Autogenerate download filename.</li>
+<li>Data input from arrays or HTML Tables.</li>
+<li>Multiple sheets for XLS or XLSX formats.</li>
+</ul>
+<h3>2.1.0 (24/09/2017)</h3>
+<ul>
+<li>Add Webpack build.</li>
+<li>Create UMD JavaScript module. Library can be loaded as a module (import, RequireJS, AMD, etc...) or standalone as window.ExcelentExport.</li>
+</ul>
+<h3>2.0.3 (21/01/2017)</h3>
+<ul>
+<li>Fix export as a module.</li>
+<li>Changed minifier to UglifyJS.</li>
+</ul>
+<h3>2.0.2 (10/01/2017)</h3>
+<ul>
+<li>Fix CSV Chinese characters and other special characters display error in Windows Excel.</li>
+<li>Fix URL.createObjectURL(...) on Firefox.</li>
+</ul>
+<h3>2.0.0 (03/10/2016)</h3>
+<ul>
+<li>Now it can export to big files +2MB.</li>
+<li>Minimum IE 11.</li>
+<li>Links open with URL.createObjectURL(...).</li>
+<li>NPM package available.</li>
+<li>Using Semantic versioning (2.0.0 instead of 2.0).</li>
+<li>Module can be loaded standalone or with RequireJS.</li>
+<li>Change license to MIT.</li>
+</ul>
+<h3>1.5</h3>
+<ul>
+<li>Possibility to select a CSV delimiter.</li>
+<li>Bower package available.</li>
+<li>Compose package available.</li>
+</ul>
+<h3>1.4</h3>
+<ul>
+<li>Add LICENSE.txt with GPL v3.</li>
+<li>UTF-8 characters fixed.</li>
+</ul>
+<h3>1.3</h3>
+<ul>
+<li>Added minified version.</li>
+</ul>
+<h3>1.1</h3>
+<ul>
+<li>Added CSV data export</li>
+</ul>
+<h3>1.0</h3>
+<ul>
+<li>Added Excel data export</li>
+</ul>
+<h1>Working example</h1>
+<table class="table table-bordered" id="datatable" style="border: 1px solid black">
+            <tr>
+                <th>Column 1</th>
+                <th>Column "cool" 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+            <tr>
+                <td>100,111</td>
+                <td>200</td>
+                <td>300</td>
+                <td>áéíóú</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+                <td>àèìòù</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>More text</td>
+                <td>Text with
+                new line</td>
+                <td>ç ñ ÄËÏÖÜ äëïöü</td>
+            </tr>
+</table>
+
+<script src="/js/excellentexport.js"></script>
+
+<ul>
+<li><a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export table to Excel</a></li>
+<li><a download="somedata.csv" href="#" onclick="return ExcellentExport.csv(this, 'datatable');">Export table to CSV</a></li>
+</ul>
+<h1>New API</h1>
+<div class="highlight"><pre> <span class="nx">ExcellentExport</span><span class="p">.</span><span class="nx">convert</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">sheets</span><span class="p">);</span>
+
+ <span class="nx">Options</span><span class="o">:</span>
+ <span class="p">{</span>
+    <span class="nx">anchor</span><span class="o">:</span> <span class="nb">String</span><span class="o">/</span><span class="nx">Element</span><span class="p">,</span>
+    <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;xlsx&#39;</span><span class="o">/</span><span class="s1">&#39;xls&#39;</span><span class="o">/</span><span class="s1">&#39;csv&#39;</span><span class="p">,</span>
+    <span class="nx">filename</span><span class="o">:</span> <span class="nb">String</span>
+ <span class="p">}</span>
+
+ <span class="nx">Sheet</span> <span class="nx">element</span> <span class="nx">configuration</span><span class="o">:</span>
+ <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Sheet 1&#39;</span><span class="p">,</span> <span class="c1">// Sheet name</span>
+    <span class="nx">from</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">table</span><span class="o">:</span> <span class="nb">String</span><span class="o">/</span><span class="nx">Element</span><span class="p">,</span> <span class="c1">// Table ID or table element</span>
+        <span class="nx">array</span><span class="o">:</span> <span class="cp">[</span><span class="nx">...</span><span class="cp">]</span><span class="p">,</span> <span class="c1">// Array with data</span>
+        <span class="nx">arrayHasHeader</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Array first row is the header</span>
+        <span class="nx">removeColumns</span><span class="o">:</span> <span class="cp">[</span><span class="nx">...</span><span class="cp">]</span><span class="p">,</span> <span class="c1">// Array of column indexes (from 0)</span>
+        <span class="nx">filterRowFn</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">row</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="kc">true</span><span class="p">}</span> <span class="c1">// Return true to keep</span>
+    <span class="p">},</span>
+    <span class="p">...</span>
+ <span class="p">}</span>
+</pre></div>
+
+
+<h1>Conclusion</h1>
+<p>Now <a href="https://github.com/jmaister/excellentexport">ExcellentExport.js</a> basically works on all browsers.
+It is ready for you to use on your projects.  </p>
+<p>Check on github or this blog for updates. <a href="https://github.com/jmaister/excellentexport">ExcellentExport.js</a>.</p>
+    </div>
+    <hr/>
+    <div class="panel-body socialbar">
+        <p>Probably, you want to share this article:</p>
+        <div> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html" data-text="Jordi Burgos: 'ExcellentExport.js update: Javascript export to Excel and CSV. http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html" data-via="jordimaister">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ </div>
+        <div> <script type="text/javascript">
+reddit_url='http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html';
+reddit_title='ExcellentExport.js update: Javascript export to Excel and CSV';
+</script>
+<script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
+ </div>
+        <div> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=378472698924914";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ </div>
+        <div> <!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone"></div>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </div>
+        <div> <iframe src="http://ghbtns.com/github-btn.html?user=jmaister&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20">
+</iframe>
+ </div>
+    </div>
+    <hr/>
+<script>
+var idcomments_acct = '4694cdcf34649ebd0124a7e3d7e98a5c';
+var idcomments_post_id = 'excellentexport-javascript-export-to-excel-csv';
+var idcomments_post_url; // = http://jordiburgos.com/post/2017/excellentexport-javascript-export-to-excel-csv.html
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</section>
+
+            <div>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>                    </div>
+                    <div>
+                        <!-- categories -->
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul class="pure-menu-list">
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/hardware.html"><i class="fi-folder small"></i> Hardware</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/misc.html"><i class="fi-folder small"></i> Misc</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/opinion.html"><i class="fi-folder small"></i> Opinion</a>
+                                  </li>
+                                  <li class="pure-menu-item active">
+                                      <a class="pure-menu-link" href="/category/programming.html"><i class="fi-folder small"></i> Programming</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/technology.html"><i class="fi-folder small"></i> Technology</a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- categories -->
+                    </div>
+                    <div>
+                        &copy;
+                        <!-- SEO: vcard -->
+                        <address id="hcard-Jordi-Burgos" class="vcard author">
+                            <a class="name" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <a class="fn" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <img src="http://i.imgur.com/GoIhFqm.jpg" alt="photo of " class="photo"/>
+                            <span class="title">Software Engineer</span>
+                            <span class="org">jordiburgos.com</span>
+                            <a class="url" href="http://jordiburgos.com">jordiburgos.com</a>
+                            <a class="email" href="mailto:jordiburgos@gmail.com">jordiburgos@gmail.com</a>
+                            <span class="address">
+                                <span class="region">Dublin</span>
+                                <span class="country-name">Ireland</span>
+                            </span>
+                        </address>
+                        2013-2017.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Add statistycs-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45872762-1', 'jordiburgos.com');
+  ga('send', 'pageview');
+</script>
+
+
+    <!-- article specific JS -->
+
+</body>
+</html>

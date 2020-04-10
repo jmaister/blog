@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jordi Burgos - About Me</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jordi Burgos. Programming, technology and random things..">
+
+        <!--Add SEO pagemap-->
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+<DataObject type="document">
+<Attribute name="title">Homepage</Attribute>
+<Attribute name="author">Jordi Burgos</Attribute>
+<Attribute name="description">Programming, technology and random things.</Attribute>
+<Attribute name="page_count">1</Attribute>
+<Attribute name="rating">5</Attribute>
+<Attribute name="last_update">2019-02-17 20:45:11.749340</Attribute>
+</DataObject>
+
+<DataObject type="thumbnail">
+<Attribute name="src" value="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+<Attribute name="width" value="300" />
+<Attribute name="height" value="300" />
+</DataObject>
+</PageMap>
+
+-->    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="jordimaister" />
+    <meta name="twitter:image" content="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+        <meta name="twitter:title" content="Jordi Burgos" />
+        <meta name="twitter:description" content="Programming, technology and random things." />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css">
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="/theme/foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="/theme/css/pygments.css">
+
+        <link rel="stylesheet" href="/theme/css/blog.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+            <!-- SEO: g+ -->
+            <link rel="author" href="https://plus.google.com/105036003303074734569"/>
+
+
+
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a class="navbar-brand" href="/">Jordi Burgos</a></h1>
+                <h2 class="brand-tagline">Programming, technology and random things.</h2>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="pure-button" href="/">Blog</a>
+                        </li>
+
+                            <li class="nav-item active">
+                              <a class="pure-button" href="/pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/cv.html">CV</a>
+                            </li>
+
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/archives.html">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/tags.html">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+<section id="content" class="body">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <a href="/pages/about-me.html" rel="bookmark" title="Permalink to About Me">About Me</a>
+        </div>
+        <div class="panel-body">
+            
+
+            <p>Hi.</p>
+<p>I'm <a href="http://jordiburgos.com">Jordi Burgos</a>. I'm from Paiporta, near Valencia in Spain.</p>
+<p>I'm a software engineer, curious about programming and technology.</p>
+<p>I work mainly with Java and Oracle. Also I like to play with Javascript, Python, Django, ...</p>
+<div id="map_canvas" style="height: 300px; width:100%; padding:25px;">
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(39.431035,-0.414678),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+    var paiporta = new google.maps.LatLng(39.431035,-0.414678);
+    var marker = new google.maps.Marker({
+        map:map,
+        draggable:false,
+        animation: google.maps.Animation.DROP,
+        position: paiporta
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+        </div>
+    </div>
+</section>
+
+            <div>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>                    </div>
+                    <div>
+                        <!-- categories -->
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul class="pure-menu-list">
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/hardware.html"><i class="fi-folder small"></i> Hardware</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/misc.html"><i class="fi-folder small"></i> Misc</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/opinion.html"><i class="fi-folder small"></i> Opinion</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/programming.html"><i class="fi-folder small"></i> Programming</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/technology.html"><i class="fi-folder small"></i> Technology</a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- categories -->
+                    </div>
+                    <div>
+                        &copy;
+                        <!-- SEO: vcard -->
+                        <address id="hcard-Jordi-Burgos" class="vcard author">
+                            <a class="name" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <a class="fn" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <img src="http://i.imgur.com/GoIhFqm.jpg" alt="photo of " class="photo"/>
+                            <span class="title">Software Engineer</span>
+                            <span class="org">jordiburgos.com</span>
+                            <a class="url" href="http://jordiburgos.com">jordiburgos.com</a>
+                            <a class="email" href="mailto:jordiburgos@gmail.com">jordiburgos@gmail.com</a>
+                            <span class="address">
+                                <span class="region">Dublin</span>
+                                <span class="country-name">Ireland</span>
+                            </span>
+                        </address>
+                        2013-2017.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Add statistycs-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45872762-1', 'jordiburgos.com');
+  ga('send', 'pageview');
+</script>
+
+
+    <!-- article specific JS -->
+
+</body>
+</html>

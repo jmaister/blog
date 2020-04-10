@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jordi Burgos - The smallest and easiest REST server in Python</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jordi Burgos. Programming, technology and random things..">
+
+        <!--Add SEO pagemap-->
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+<DataObject type="document">
+    <Attribute name="title">The smallest and easiest REST server in Python</Attribute>
+    <Attribute name="author">Jordi Burgos</Attribute>
+    <Attribute name="description">I am creating a web application for writing. This is just the beginning and I am making some experiments. I decided to use AngularJS for the interface, as it solves most of the problems of any web application interface. Templates, two-way data binding between template and code, easy REST actions ...</Attribute>
+    <Attribute name="page_count">1</Attribute>
+    <Attribute name="rating">5</Attribute>
+    <Attribute name="last_update">2014-04-16T23:00:00+02:00</Attribute>
+</DataObject>
+<DataObject type="metatags">
+    <Attribute name="category" value="Programming"/>
+        <Attribute name="category" value="AngularJS"/>
+        <Attribute name="category" value="Python"/>
+        <Attribute name="category" value="JSON"/>
+        <Attribute name="category" value="project"/>
+</DataObject>
+
+<DataObject type="thumbnail">
+<Attribute name="src" value="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+<Attribute name="width" value="300" />
+<Attribute name="height" value="300" />
+</DataObject>
+</PageMap>
+
+-->    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="jordimaister" />
+    <meta name="twitter:image" content="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+        <meta name="twitter:title" content="The smallest and easiest REST server in Python" />
+        <meta name="twitter:description" content="Article: The smallest and easiest REST server in Python" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css">
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="/theme/foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="/theme/css/pygments.css">
+
+        <link rel="stylesheet" href="/theme/css/blog.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+            <!-- SEO: g+ -->
+            <link rel="author" href="https://plus.google.com/105036003303074734569"/>
+
+
+
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a class="navbar-brand" href="/">Jordi Burgos</a></h1>
+                <h2 class="brand-tagline">Programming, technology and random things.</h2>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="pure-button" href="/">Blog</a>
+                        </li>
+
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/cv.html">CV</a>
+                            </li>
+
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/archives.html">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/tags.html">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+<section class="post">
+    <header class="post-header">
+        <img alt="Jordi Burgos's avatar" class="post-avatar" src="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" height="48" width="48">
+        <h2 class="post-title">The smallest and easiest REST server in Python</h2>
+
+        <p class="post-meta">
+By <a href="/author/jordi-burgos.html" class="author post-author" rel="author">Jordi Burgos</a>
+<span>
+ on <abbr class="published dt-published" title="2014-04-16T23:00:00+02:00"> 16 abr 2014 </abbr>
+</span>
+category
+<a class="post-category post-category-Programming p-category" href="/category/programming.html" rel="tag">Programming</a>
+tags
+    <a class="post-category post-category-AngularJS p-category" href="/tag/angularjs.html" rel="tag">AngularJS</a>
+    <a class="post-category post-category-JSON p-category" href="/tag/json.html" rel="tag">JSON</a>
+    <a class="post-category post-category-project p-category" href="/tag/project.html" rel="tag">project</a>
+    <a class="post-category post-category-Python p-category" href="/tag/python.html" rel="tag">Python</a>
+<div class="readtime">
+    Read in 2 min.</b>
+</div>
+        </p>
+    </header>
+
+    <div class="post-description">
+        <p>I am creating a web application for writing. This is just the beginning and I am making some experiments.</p>
+<p>I decided to use AngularJS for the interface, as it solves most of the problems of any web application interface. Templates, two-way data binding between template and code, easy REST actions, etc...</p>
+<p>As I understand, I am just learning, AngularJS is mostly designed for using a REST server for the data load and store. Any server would work whenever it responds to REST requests. For this reason, this solution is the fastest and easiest for creating a REST server in Python.</p>
+<h1>REST server with web.py</h1>
+<p>Here is the python script to define and start the REST server.</p>
+<p>It defines two endpoints, <em>/authors</em> and <em>/suggest/[param1]/[param2]</em>.</p>
+<div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">web</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c"># Define exposed URL&#39;s</span>
+<span class="n">urls</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s">&#39;/authors&#39;</span><span class="p">,</span> <span class="s">&#39;authors&#39;</span><span class="p">,</span>
+    <span class="s">&#39;/suggest/(.*)/(.*)&#39;</span><span class="p">,</span> <span class="s">&#39;suggest&#39;</span>
+<span class="p">)</span>
+
+<span class="c"># Define the application</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">web</span><span class="o">.</span><span class="n">application</span><span class="p">(</span><span class="n">urls</span><span class="p">,</span> <span class="nb">globals</span><span class="p">())</span>
+
+<span class="n">AUTHORS</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Miguel de Cervantes&#39;</span><span class="p">,</span> <span class="s">&#39;William Shakespeare&#39;</span><span class="p">,</span> <span class="s">&#39;Francisco de Quevedo&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+
+<span class="c"># Define the actions when the URL&#39;s are called</span>
+<span class="k">class</span> <span class="nc">authors</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">GET</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s">&#39;authors&#39;</span><span class="p">:</span> <span class="n">AUTHORS</span><span class="p">})</span>
+
+
+<span class="k">class</span> <span class="nc">suggest</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">GET</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">AUTHORS</span><span class="p">:</span>
+            <span class="n">suggestions</span> <span class="o">=</span> <span class="n">find_suggestions</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">suggestions</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s">&#39;Error: author not found.&#39;</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c"># Start the server</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+
+
+<h1>Call using AngularJS</h1>
+<p>The JavaScript code to make the request to the <em>/authors</em> URL. It updates the <em>$scope.authors</em> variable with the data received.</p>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">AUTHOR_URL</span> <span class="o">=</span> <span class="s1">&#39;http://localhost:8080/authors&#39;</span><span class="p">;</span>
+
+<span class="nx">$http</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">AUTHOR_URL</span><span class="p">).</span><span class="nx">success</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">headers</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;success&#39;</span><span class="p">);</span>
+    <span class="nx">$scope</span><span class="p">.</span><span class="nx">authors</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">authors</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);</span>
+<span class="p">}).</span><span class="nx">error</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">headers</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>This is the HTML code with the AngularJS directives to populate the data received to a SELECT component.</p>
+<div class="highlight"><pre><span class="nt">&lt;select</span> <span class="na">ng-model=</span><span class="s">&quot;author&quot;</span> <span class="na">ng-options=</span><span class="s">&quot;a for a in authors&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+</pre></div>
+
+
+<h1>Conclusion</h1>
+<p>This solution is adequate if you need a REST server for learning or evaluating a new technology as it is easy and fast.
+It is also good for mocking REST responses for unit testing purposes.
+On next articles, I will show some samples of the AngularJS application.</p>
+    </div>
+    <hr/>
+    <div class="panel-body socialbar">
+        <p>Probably, you want to share this article:</p>
+        <div> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html" data-text="Jordi Burgos: 'The smallest and easiest REST server in Python. http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html" data-via="jordimaister">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ </div>
+        <div> <script type="text/javascript">
+reddit_url='http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html';
+reddit_title='The smallest and easiest REST server in Python';
+</script>
+<script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
+ </div>
+        <div> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=378472698924914";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ </div>
+        <div> <!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone"></div>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </div>
+        <div> <iframe src="http://ghbtns.com/github-btn.html?user=jmaister&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20">
+</iframe>
+ </div>
+    </div>
+    <hr/>
+<script>
+var idcomments_acct = '4694cdcf34649ebd0124a7e3d7e98a5c';
+var idcomments_post_id = 'smallest-easiest-rest-server-python';
+var idcomments_post_url; // = http://jordiburgos.com/post/2014/smallest-easiest-rest-server-python.html
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</section>
+
+            <div>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>                    </div>
+                    <div>
+                        <!-- categories -->
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul class="pure-menu-list">
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/hardware.html"><i class="fi-folder small"></i> Hardware</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/misc.html"><i class="fi-folder small"></i> Misc</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/opinion.html"><i class="fi-folder small"></i> Opinion</a>
+                                  </li>
+                                  <li class="pure-menu-item active">
+                                      <a class="pure-menu-link" href="/category/programming.html"><i class="fi-folder small"></i> Programming</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/technology.html"><i class="fi-folder small"></i> Technology</a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- categories -->
+                    </div>
+                    <div>
+                        &copy;
+                        <!-- SEO: vcard -->
+                        <address id="hcard-Jordi-Burgos" class="vcard author">
+                            <a class="name" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <a class="fn" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <img src="http://i.imgur.com/GoIhFqm.jpg" alt="photo of " class="photo"/>
+                            <span class="title">Software Engineer</span>
+                            <span class="org">jordiburgos.com</span>
+                            <a class="url" href="http://jordiburgos.com">jordiburgos.com</a>
+                            <a class="email" href="mailto:jordiburgos@gmail.com">jordiburgos@gmail.com</a>
+                            <span class="address">
+                                <span class="region">Dublin</span>
+                                <span class="country-name">Ireland</span>
+                            </span>
+                        </address>
+                        2013-2017.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Add statistycs-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45872762-1', 'jordiburgos.com');
+  ga('send', 'pageview');
+</script>
+
+
+    <!-- article specific JS -->
+
+</body>
+</html>

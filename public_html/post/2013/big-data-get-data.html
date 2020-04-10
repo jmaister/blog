@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jordi Burgos - Big Data: Get the data</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jordi Burgos. Programming, technology and random things..">
+
+        <!--Add SEO pagemap-->
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+<DataObject type="document">
+    <Attribute name="title">Big Data: Get the data</Attribute>
+    <Attribute name="author">Jordi Burgos</Attribute>
+    <Attribute name="description">Lastly, there is a lot of news, work offers, noise, ads, ... about Big Data. Because of this I decided to make my own Big Data project. As this just would be to implement a map-reduce algorithm in any language, quite easy for any programming exercise, I wanted to give this ...</Attribute>
+    <Attribute name="page_count">1</Attribute>
+    <Attribute name="rating">5</Attribute>
+    <Attribute name="last_update">2013-12-02T20:00:00+01:00</Attribute>
+</DataObject>
+<DataObject type="metatags">
+    <Attribute name="category" value="Programming"/>
+        <Attribute name="category" value="big data"/>
+        <Attribute name="category" value="small data"/>
+        <Attribute name="category" value="hadoop"/>
+</DataObject>
+
+<DataObject type="thumbnail">
+<Attribute name="src" value="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+<Attribute name="width" value="300" />
+<Attribute name="height" value="300" />
+</DataObject>
+</PageMap>
+
+-->    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="jordimaister" />
+    <meta name="twitter:image" content="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+        <meta name="twitter:title" content="Big Data: Get the data" />
+        <meta name="twitter:description" content="Article: Big Data: Get the data" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css">
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="/theme/foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="/theme/css/pygments.css">
+
+        <link rel="stylesheet" href="/theme/css/blog.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+            <!-- SEO: g+ -->
+            <link rel="author" href="https://plus.google.com/105036003303074734569"/>
+
+
+
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a class="navbar-brand" href="/">Jordi Burgos</a></h1>
+                <h2 class="brand-tagline">Programming, technology and random things.</h2>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="pure-button" href="/">Blog</a>
+                        </li>
+
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/cv.html">CV</a>
+                            </li>
+
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/archives.html">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/tags.html">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+<section class="post">
+    <header class="post-header">
+        <img alt="Jordi Burgos's avatar" class="post-avatar" src="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" height="48" width="48">
+        <h2 class="post-title">Big Data: Get the data</h2>
+
+        <p class="post-meta">
+By <a href="/author/jordi-burgos.html" class="author post-author" rel="author">Jordi Burgos</a>
+<span>
+ on <abbr class="published dt-published" title="2013-12-02T20:00:00+01:00"> 02 dic 2013 </abbr>
+</span>
+category
+<a class="post-category post-category-Programming p-category" href="/category/programming.html" rel="tag">Programming</a>
+tags
+    <a class="post-category post-category-big data p-category" href="/tag/big-data.html" rel="tag">big data</a>
+    <a class="post-category post-category-hadoop p-category" href="/tag/hadoop.html" rel="tag">hadoop</a>
+    <a class="post-category post-category-small data p-category" href="/tag/small-data.html" rel="tag">small data</a>
+<div class="readtime">
+    Read in 3 min.</b>
+</div>
+        </p>
+    </header>
+
+    <div class="post-description">
+        <p>Lastly, there is a lot of news, work offers, noise, ads, ... about <strong>Big Data</strong>. Because of this I decided to make my own Big Data project.</p>
+<p>As this just would be to implement a map-reduce algorithm in any language, quite easy for any programming exercise, I wanted to give this technology an use for something real.</p>
+<h1>The data</h1>
+<p>Any Big Data project is nothing without the data. Otherwise, it would be called <strong>small data</strong> or   <strong>medium data</strong> (by the way, I should register this new trademarks).</p>
+<p>The data to be processed is the files of the <a href="http://www.boe.es">BOE</a>. The <strong>Bolet&iacute;n Oficial del Estado</strong> (BOE) is a daily Spanish-government publication in which new laws, directives and executive decisions are published together with advertisements for public-sector posts and contracts. It is provided free of charge to all government agencies and state organizations including schools, embassies and public libraries. (Collins Spanish Dictionary)</p>
+<h1>Get the data</h1>
+<p>For scrapping the data from the website, first approach is always to use Python tools like <a href="http://scrapy.org/">Scrapy</a> or <a href="http://docs.webscraping.com/index.html">webscraping</a>. I used these tools some times before and make very easy to crawl a full website looking for information. But after some research of the pages, it would be very over-engineered to use these tools.</p>
+<p>All the files follow the same pattern:</p>
+<ul>
+<li>Format: <em>xml</em> for marked documents; <em>txt</em> for plain text.</li>
+<li>Code: <em>A</em> for general orders, personnel and misc; <em>B</em> for Justice administration.</li>
+<li>Year</li>
+<li>
+<p>ID: from <em>1</em> to the <em>number of documents</em>.</p>
+<p>http://www.boe.es/diario_boe/[format].php?id=BOE-[code]-[year]-[id]</p>
+</li>
+</ul>
+<p>For starting, I downloaded the files for years 2012 and 2013. 182694 files with 1,67 GB (1.800.364.500 bytes).</p>
+<div class="highlight"><pre><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Scrapping BOE (boe.es) bulletins.</span>
+
+<span class="sd">Created on 30/11/2013</span>
+<span class="sd">@author: Jordi Burgos</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c"># pip install webscraping</span>
+<span class="c"># http://docs.webscraping.com/examples.html#business-directory-threaded-scraper</span>
+
+<span class="kn">from</span> <span class="nn">webscraping</span> <span class="kn">import</span> <span class="n">download</span><span class="p">,</span> <span class="n">xpath</span>
+
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">urlparse</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">os.path</span>
+
+<span class="kn">import</span> <span class="nn">urllib2</span>
+
+<span class="n">DOMAIN</span> <span class="o">=</span> <span class="s">&quot;http://www.boe.es&quot;</span>
+<span class="n">BOE_LINK</span> <span class="o">=</span> <span class="s">&quot;/diario_boe/xml.php?id=</span><span class="si">%s</span><span class="s">&quot;</span>
+<span class="n">FILENAME</span> <span class="o">=</span> <span class="s">&quot;BOE-</span><span class="si">%s</span><span class="s">-</span><span class="si">%d</span><span class="s">-</span><span class="si">%d</span><span class="s">&quot;</span>
+<span class="n">OUTPUT</span> <span class="o">=</span> <span class="s">&quot;files/&quot;</span>
+
+<span class="n">MAX_IDS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">2013</span><span class="p">:</span> <span class="p">{</span><span class="s">&#39;A&#39;</span><span class="p">:</span> <span class="mi">12536</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">:</span> <span class="mi">45197</span><span class="p">},</span>
+    <span class="mi">2012</span><span class="p">:</span> <span class="p">{</span><span class="s">&#39;A&#39;</span><span class="p">:</span> <span class="mi">15822</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">:</span> <span class="mi">45222</span><span class="p">},</span>    
+    <span class="mi">2011</span><span class="p">:</span> <span class="p">{</span><span class="s">&#39;A&#39;</span><span class="p">:</span> <span class="mi">20867</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">:</span> <span class="mi">43026</span><span class="p">},</span>    
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">year</span><span class="p">,</span> <span class="n">max_codes</span> <span class="ow">in</span> <span class="n">MAX_IDS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">code</span><span class="p">,</span> <span class="n">max_id</span> <span class="ow">in</span> <span class="n">max_codes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_id</span><span class="p">):</span>
+                <span class="n">fullid</span> <span class="o">=</span> <span class="n">FILENAME</span> <span class="o">%</span> <span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="nb">id</span><span class="p">)</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">OUTPUT</span> <span class="o">+</span> <span class="n">fullid</span>
+                <span class="n">link</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urljoin</span><span class="p">(</span><span class="n">DOMAIN</span><span class="p">,</span> <span class="n">BOE_LINK</span> <span class="o">%</span> <span class="p">(</span><span class="n">fullid</span><span class="p">))</span>
+                <span class="n">save_url</span><span class="p">(</span><span class="n">link</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">save_url</span><span class="p">(</span><span class="n">link</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">link</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">except</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;error&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">link</span><span class="p">,</span> <span class="n">filename</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+
+<h1>Conclusion</h1>
+<p>After getting the data, on next articles I will set up a Hadoop environment for programming and analyse the data.</p>
+    </div>
+    <hr/>
+    <div class="panel-body socialbar">
+        <p>Probably, you want to share this article:</p>
+        <div> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jordiburgos.com/post/2013/big-data-get-data.html" data-text="Jordi Burgos: 'Big Data: Get the data. http://jordiburgos.com/post/2013/big-data-get-data.html" data-via="jordimaister">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ </div>
+        <div> <script type="text/javascript">
+reddit_url='http://jordiburgos.com/post/2013/big-data-get-data.html';
+reddit_title='Big Data: Get the data';
+</script>
+<script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
+ </div>
+        <div> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=378472698924914";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://jordiburgos.com/post/2013/big-data-get-data.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ </div>
+        <div> <!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone"></div>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </div>
+        <div> <iframe src="http://ghbtns.com/github-btn.html?user=jmaister&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20">
+</iframe>
+ </div>
+    </div>
+    <hr/>
+<script>
+var idcomments_acct = '4694cdcf34649ebd0124a7e3d7e98a5c';
+var idcomments_post_id = 'big-data-get-data';
+var idcomments_post_url; // = http://jordiburgos.com/post/2013/big-data-get-data.html
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</section>
+
+            <div>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>                    </div>
+                    <div>
+                        <!-- categories -->
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul class="pure-menu-list">
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/hardware.html"><i class="fi-folder small"></i> Hardware</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/misc.html"><i class="fi-folder small"></i> Misc</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/opinion.html"><i class="fi-folder small"></i> Opinion</a>
+                                  </li>
+                                  <li class="pure-menu-item active">
+                                      <a class="pure-menu-link" href="/category/programming.html"><i class="fi-folder small"></i> Programming</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/technology.html"><i class="fi-folder small"></i> Technology</a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- categories -->
+                    </div>
+                    <div>
+                        &copy;
+                        <!-- SEO: vcard -->
+                        <address id="hcard-Jordi-Burgos" class="vcard author">
+                            <a class="name" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <a class="fn" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <img src="http://i.imgur.com/GoIhFqm.jpg" alt="photo of " class="photo"/>
+                            <span class="title">Software Engineer</span>
+                            <span class="org">jordiburgos.com</span>
+                            <a class="url" href="http://jordiburgos.com">jordiburgos.com</a>
+                            <a class="email" href="mailto:jordiburgos@gmail.com">jordiburgos@gmail.com</a>
+                            <span class="address">
+                                <span class="region">Dublin</span>
+                                <span class="country-name">Ireland</span>
+                            </span>
+                        </address>
+                        2013-2017.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Add statistycs-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45872762-1', 'jordiburgos.com');
+  ga('send', 'pageview');
+</script>
+
+
+    <!-- article specific JS -->
+
+</body>
+</html>

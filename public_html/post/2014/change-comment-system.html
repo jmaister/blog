@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jordi Burgos - Change on the comment system</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jordi Burgos. Programming, technology and random things..">
+
+        <!--Add SEO pagemap-->
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+<DataObject type="document">
+    <Attribute name="title">Change on the comment system</Attribute>
+    <Attribute name="author">Jordi Burgos</Attribute>
+    <Attribute name="description">I changed the blog comment system. Now powered by IntenseDebate. Disqus was giving a lot of headaches. The comments were appearing on all the pages, mixed comments between articles, and they were supposed to be separated by article.</Attribute>
+    <Attribute name="page_count">1</Attribute>
+    <Attribute name="rating">5</Attribute>
+    <Attribute name="last_update">2014-04-21T20:40:00+02:00</Attribute>
+</DataObject>
+<DataObject type="metatags">
+    <Attribute name="category" value="Misc"/>
+        <Attribute name="category" value="blog"/>
+        <Attribute name="category" value="comments"/>
+</DataObject>
+
+<DataObject type="thumbnail">
+<Attribute name="src" value="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+<Attribute name="width" value="300" />
+<Attribute name="height" value="300" />
+</DataObject>
+</PageMap>
+
+-->    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="jordimaister" />
+    <meta name="twitter:image" content="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" />
+        <meta name="twitter:title" content="Change on the comment system" />
+        <meta name="twitter:description" content="Article: Change on the comment system" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css">
+        <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="/theme/foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="/theme/css/pygments.css">
+
+        <link rel="stylesheet" href="/theme/css/blog.css">
+        <link rel="stylesheet" href="/theme/css/main.css">
+
+            <!-- SEO: g+ -->
+            <link rel="author" href="https://plus.google.com/105036003303074734569"/>
+
+
+
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a class="navbar-brand" href="/">Jordi Burgos</a></h1>
+                <h2 class="brand-tagline">Programming, technology and random things.</h2>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="pure-button" href="/">Blog</a>
+                        </li>
+
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="pure-button" href="/pages/cv.html">CV</a>
+                            </li>
+
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/archives.html">Archive</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="pure-button" href="/tags.html">Tags</a>
+                        </li>
+                    </ul>
+                </nav>
+
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+<section class="post">
+    <header class="post-header">
+        <img alt="Jordi Burgos's avatar" class="post-avatar" src="http://www.gravatar.com/avatar/9201c501532256286e60080ce8739045?s=300" height="48" width="48">
+        <h2 class="post-title">Change on the comment system</h2>
+
+        <p class="post-meta">
+By <a href="/author/jordi-burgos.html" class="author post-author" rel="author">Jordi Burgos</a>
+<span>
+ on <abbr class="published dt-published" title="2014-04-21T20:40:00+02:00"> 21 abr 2014 </abbr>
+</span>
+category
+<a class="post-category post-category-Misc p-category" href="/category/misc.html" rel="tag">Misc</a>
+tags
+    <a class="post-category post-category-blog p-category" href="/tag/blog.html" rel="tag">blog</a>
+    <a class="post-category post-category-comments p-category" href="/tag/comments.html" rel="tag">comments</a>
+<div class="readtime">
+    Read in 1 min.</b>
+</div>
+        </p>
+    </header>
+
+    <div class="post-description">
+        <p>I changed the blog comment system. Now powered by <a href="http://www.intensedebate.com">IntenseDebate</a>.</p>
+<p>Disqus was giving a lot of headaches. The comments were appearing on all the pages, mixed comments between articles, and they were supposed to be separated by article.</p>
+<h1>Installing</h1>
+<p>It just took 2 minutes to test the new commenting site, less than writing this article, and it works great.</p>
+<p>Here is the code on the Pelican template to show or hide the comments.</p>
+<div class="highlight"><pre><span class="cp">{%</span> <span class="k">if</span> <span class="nv">INTENSEDEBATE_ACCOUNT</span> <span class="cp">%}</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">idcomments_acct</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="cp">{{</span><span class="nv">INTENSEDEBATE_ACCOUNT</span><span class="cp">}}</span><span class="s1">&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">idcomments_post_id</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="cp">{{</span> <span class="nv">article.slug</span> <span class="cp">}}</span><span class="s1">&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">idcomments_post_url</span><span class="p">;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;IDCommentsPostTitle&quot;</span> <span class="na">style=</span><span class="s">&quot;display:none&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span> <span class="na">src=</span><span class="s">&#39;http://www.intensedebate.com/js/genericCommentWrapperV2.js&#39;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</pre></div>
+
+
+<h1>Conclusion</h1>
+<p>We have lost the previous comments, but we won a new commenting system that really works.</p>
+<p>Keep commenting all the articles!!!</p>
+<div class="center">
+<p><img alt="Not bad" src="http://jordiburgos.com/images/meme/surprise.gif" /></p>
+</div>
+    </div>
+    <hr/>
+    <div class="panel-body socialbar">
+        <p>Probably, you want to share this article:</p>
+        <div> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jordiburgos.com/post/2014/change-comment-system.html" data-text="Jordi Burgos: 'Change on the comment system. http://jordiburgos.com/post/2014/change-comment-system.html" data-via="jordimaister">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ </div>
+        <div> <script type="text/javascript">
+reddit_url='http://jordiburgos.com/post/2014/change-comment-system.html';
+reddit_title='Change on the comment system';
+</script>
+<script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
+ </div>
+        <div> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=378472698924914";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://jordiburgos.com/post/2014/change-comment-system.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ </div>
+        <div> <!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone"></div>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </div>
+        <div> <iframe src="http://ghbtns.com/github-btn.html?user=jmaister&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20">
+</iframe>
+ </div>
+    </div>
+    <hr/>
+<script>
+var idcomments_acct = '4694cdcf34649ebd0124a7e3d7e98a5c';
+var idcomments_post_id = 'change-comment-system';
+var idcomments_post_url; // = http://jordiburgos.com/post/2014/change-comment-system.html
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</section>
+
+            <div>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+<div>
+        <a href="http://twitter.com/jordimaister" title="twitter" target="_blank" rel="me"><i class="fi-social-twitter large"></i></a>
+        <a href="http://github.com/jmaister" title="github" target="_blank" rel="me"><i class="fi-social-github large"></i></a>
+        <a href="https://plus.google.com/105036003303074734569?rel=author" title="google-plus" target="_blank" rel="me"><i class="fi-social-google-plus large"></i></a>
+        <a href="mailto:jordiburgos@gmail.com"  title="e-Mail" target="_blank" rel="me"><i class="fi-mail large"></i></a>
+</div>                    </div>
+                    <div>
+                        <!-- categories -->
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul class="pure-menu-list">
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/hardware.html"><i class="fi-folder small"></i> Hardware</a>
+                                  </li>
+                                  <li class="pure-menu-item active">
+                                      <a class="pure-menu-link" href="/category/misc.html"><i class="fi-folder small"></i> Misc</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/opinion.html"><i class="fi-folder small"></i> Opinion</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/programming.html"><i class="fi-folder small"></i> Programming</a>
+                                  </li>
+                                  <li class="pure-menu-item ">
+                                      <a class="pure-menu-link" href="/category/technology.html"><i class="fi-folder small"></i> Technology</a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- categories -->
+                    </div>
+                    <div>
+                        &copy;
+                        <!-- SEO: vcard -->
+                        <address id="hcard-Jordi-Burgos" class="vcard author">
+                            <a class="name" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <a class="fn" href="/author/jordi-burgos.html" rel="canonical">Jordi Burgos</a>
+                            <img src="http://i.imgur.com/GoIhFqm.jpg" alt="photo of " class="photo"/>
+                            <span class="title">Software Engineer</span>
+                            <span class="org">jordiburgos.com</span>
+                            <a class="url" href="http://jordiburgos.com">jordiburgos.com</a>
+                            <a class="email" href="mailto:jordiburgos@gmail.com">jordiburgos@gmail.com</a>
+                            <span class="address">
+                                <span class="region">Dublin</span>
+                                <span class="country-name">Ireland</span>
+                            </span>
+                        </address>
+                        2013-2017.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Add statistycs-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45872762-1', 'jordiburgos.com');
+  ga('send', 'pageview');
+</script>
+
+
+    <!-- article specific JS -->
+
+</body>
+</html>
